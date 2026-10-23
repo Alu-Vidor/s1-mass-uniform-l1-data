@@ -1,0 +1,155 @@
+{
+  "role": "Physically realizable passive circuit benchmark, with published CPE hardware scale; no measurements of the new three-node circuit are claimed.",
+  "primary_source": {
+    "authors": [
+      "Roman Sotner",
+      "Ondrej Domansky",
+      "Jan Jerabek",
+      "Norbert Herencsar",
+      "Jiri Petrzela",
+      "Darius Andriukaitis"
+    ],
+    "year_citation": 2020,
+    "published_online": "2019-12-19",
+    "journal": "Applied Sciences",
+    "volume": "10",
+    "issue": "1",
+    "article": "54",
+    "doi": "10.3390/app10010054",
+    "title": "Integer-and Fractional-Order Integral and Derivative Two-Port Summations: Practical Design Considerations",
+    "publisher_url": "https://www.mdpi.com/2076-3417/10/1/54",
+    "institutional_fulltext_url": "https://epubl.ktu.edu/object/elaba%3A46613419/46613419.pdf",
+    "parameter_locations": [
+      "Section 3, page 6",
+      "Figure 2(a), page 7"
+    ],
+    "alpha": 0.5,
+    "Qbase_F_s_alpha_minus_1": 5.6e-05,
+    "phase_band_Hz": [
+      1,
+      3000000.0
+    ],
+    "phase_tolerance_degrees": 2,
+    "phase_band_status": "Theoretical operational bandwidth reported for passive RC design; not a statement that arbitrary transient waveforms have a 2 percent error.",
+    "base_emulator": {
+      "Rp_ohm": 15000.0,
+      "Cp_F": 5e-10,
+      "R_series_ohm": [
+        9120,
+        3650,
+        1460,
+        583,
+        220,
+        83,
+        30,
+        15,
+        6,
+        3
+      ],
+      "C_series_F": [
+        1.1e-05,
+        4.4e-06,
+        1.68e-06,
+        6.8e-07,
+        2.67e-07,
+        1e-07,
+        3.8e-08,
+        1.1e-08,
+        5.9e-09,
+        3e-09
+      ],
+      "connection": "Rp and Cp in parallel with ten series-RC branches, all across CPE terminals.",
+      "extraction_status": "All component values visually checked on rendered Figure 2(a)."
+    },
+    "experimental_status": "The paper used this alpha and pseudo-capacitance in experimentally tested two-port circuits; its passive circuit figure is a finite-band CPE realization, not an exact fractional element."
+  },
+  "proposed_new_circuit_design": {
+    "graph_edges": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "shunt_R_ohm": [
+      1000,
+      1000,
+      1000
+    ],
+    "link_R_ohm": [
+      2000,
+      2000
+    ],
+    "Q_scales": [
+      1.0,
+      0.25,
+      0.0625
+    ],
+    "Q_F_s_alpha_minus_1": [
+      5.6e-05,
+      1.4e-05,
+      3.5e-06
+    ],
+    "scaling_rule": "For node scale s: multiply every capacitor (including Cp) by s and divide every resistor (including Rp) by s. This multiplies exact emulator admittance by s while keeping each RC time constant fixed.",
+    "initialization": "All capacitor/node voltages zero for t<=0; causal step current at t=0. This uses zero prehistory and avoids arbitrary nonzero Caputo initialization.",
+    "current_A": [
+      1e-05,
+      0,
+      0
+    ],
+    "T_s": 0.050176,
+    "parameter_status": "All inter-node/shunt resistors, Q scales, input current, graph and observation window are explicit new design choices. They are not fitted measurements.",
+    "model_comparison_recommendation": "Compare ideal fractional reference against the exact zero-state response of the 33-state finite RC network, separately from the L1 numerical errors.",
+    "frequency_band_limitation": "A switched current is not band limited. Reciprocal endpoint frequencies are not a certified transient-validity window. Modal frequencies inside the design band motivate this benchmark; the finite-RC comparison quantifies model discrepancy separately.",
+    "characteristic_modal_frequencies_Hz": [
+      90.07973804970247,
+      2646.447552319707,
+      31583.794860744834
+    ],
+    "characteristic_modal_frequencies_definition": "eigenvalues lambda of Q^(-1/2) K Q^(-1/2), with f=lambda^(1/alpha)/(2*pi); all lie inside the stated 1Hz--3MHz CPE design band.",
+    "T_selection": "T=(0.224 s^(1/2))^2=0.050176 s gives dyadic nondimensional masses, simplifying exact grid arithmetic."
+  },
+  "nondimensionalization": {
+    "t0_s": 0.050176,
+    "G0_S": 0.001,
+    "V0_V": 0.01,
+    "I0_A": 1e-05,
+    "d_formula": "Q_i/(G0*t0^alpha)",
+    "d": [
+      0.25,
+      0.0625,
+      0.015625
+    ],
+    "c_i": [
+      1,
+      1,
+      1
+    ],
+    "g12": 0.5,
+    "g23": 0.5,
+    "p": [
+      1,
+      0,
+      0
+    ],
+    "u0": [
+      0,
+      0,
+      0
+    ],
+    "physical_scales_based_on_G0_s": [
+      0.0031360000000000003,
+      0.00019600000000000002,
+      1.2250000000000001e-05
+    ],
+    "sqrt_d_exact": [
+      "1/2",
+      "1/4",
+      "1/8"
+    ]
+  },
+  "primary_sources_only": true
+}

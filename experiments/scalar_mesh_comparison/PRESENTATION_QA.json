@@ -1,0 +1,20 @@
+{
+  "figure_size_inches": [
+    5.4,
+    2.7
+  ],
+  "dpi": 1200,
+  "png_dimensions": [
+    6480,
+    3240
+  ],
+  "font_sizes_points": {
+    "body": 8.5,
+    "titles": 9.0,
+    "ticks": 8.0,
+    "legend": 8.0
+  },
+  "plot_scope": "d=1e-8; both orders; sampled reconstruction errors; prescribed guides only",
+  "source_run_count": 90,
+  "final_table_rows": 6
+}

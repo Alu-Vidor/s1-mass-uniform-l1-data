@@ -1,0 +1,6 @@
+{
+  "construction": "exact j/N",
+  "uniform_parent_kept_exact": true,
+  "float64_time_max_relative_conversion_error": "91/909727124728840192",
+  "scalar_reference_time_conversion_bound": 2.943918301354786e-17
+}

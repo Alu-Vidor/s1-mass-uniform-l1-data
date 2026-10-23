@@ -1,0 +1,105 @@
+{
+  "case": {
+    "alpha": 0.5,
+    "T": 1.0,
+    "beta": 0.6,
+    "masses": [
+      0.02,
+      0.002,
+      0.0002,
+      1.0,
+      1.0
+    ],
+    "a": [
+      0.8,
+      -0.5,
+      0.6,
+      0.1,
+      0.2
+    ],
+    "b": [
+      0.8,
+      -0.6,
+      0.45,
+      0.7,
+      -0.5
+    ],
+    "losses": [
+      0.5,
+      0.5,
+      0.5,
+      1.5,
+      1.5
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "edges": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "conductances": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.7,
+      0.5
+    ],
+    "exact_solution": "u*(t)=a+b*t^3",
+    "exact_Caputo": "Gamma(4)/Gamma(4-alpha)*b*t^(3-alpha)",
+    "forcing": "M*D_C^alpha u* + componentwise edge sum at u*",
+    "prepared_initial_data": true,
+    "public_entry_scope": "Callable low-level full kernels; Model is unmodified"
+  },
+  "levels": [
+    20,
+    40,
+    80,
+    160,
+    320
+  ],
+  "mesh": "uniform np.linspace(0,T,n+1)",
+  "primary_tol": 1e-12,
+  "finest_control_tol": 1e-13,
+  "methods": {
+    "L1": "graph_full.l1_solve callable fixture"
+  },
+  "E_node": "max over all five coordinates and all stored time nodes",
+  "E_linearinterp": "continuous maximum of linear interpolation of stored states minus cubic",
+  "G17_budget": "max exact full substitution/(losses+mass*oldest L1 weight)",
+  "arithmetic_certified": false,
+  "physical_error_certified": false,
+  "performance_experiment": false,
+  "source_sha256": {
+    "run_manufactured.py": "74002c2fa7793e78068984fc714abf7745951f5c312b13110d0b8c40af1e1db8",
+    "graph_full.py": "47f84ce2008ca6e4a134152a8f2b8bbd79af27baed4c1e76ec1d11e6140cd04c",
+    "serial_pl/finite_block.py": "5766746a4ef52b5dcb575fbda1af7ca4a6a30ce294fa9877cdf1648543bc2cdd"
+  }
+}

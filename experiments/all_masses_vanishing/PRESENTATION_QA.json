@@ -1,0 +1,12 @@
+{
+  "all_output_hashes_match": true,
+  "scientific_results_hash_matches": true,
+  "presentation_script_hash_matches": true,
+  "all_displayed_text_inside_figure": true,
+  "png_pixels": [
+    6480,
+    3840
+  ],
+  "eps_type42_present": true,
+  "visual_review": "PNG inspected with view_image: no clipping of titles, axes, ticks or shared legend; markers and dashed guide visible."
+}

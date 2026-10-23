@@ -1,0 +1,63 @@
+{
+  "plot_role": "CPE physical-network response and matched-budget L1 mesh comparison",
+  "source_hashes": {
+    "results.json": "9249bd5a040b11f5e07031c0c5ce913a84b9c5a64d0f7620a34403c3cde73f84",
+    "physical_model_comparison.npz": "9eb6eec57d5a1950e04d61048735b510e4d5a18a6e354b157dfe46eda65e166d"
+  },
+  "script_sha256": "c8c2e1f3c37c0bc9c9c2643e5aecaa06e373652c030e2b05838601af22e96898",
+  "solver_imported_or_run": false,
+  "left": {
+    "units": "volts multiplied by 1000 to mV",
+    "display_window_s": [
+      1e-07,
+      0.067
+    ],
+    "curves": "Nodes1,2,3 colored blue/orange/green; ideal CPE solid and finite RC dashed.",
+    "saved_data_start_s": 0.0,
+    "model_gap_uV": 63.80926992934424
+  },
+  "right": {
+    "quantity": "sampled_PL_error * 10000, in microvolts",
+    "matched_actual_N": true,
+    "levels_m": [
+      16,
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "guide_slope": -1.5,
+    "guide_fitted": false,
+    "continuous_supremum_certificate": false
+  },
+  "figure_inches": [
+    5.4,
+    2.7
+  ],
+  "png_dpi": 1200,
+  "png_pixels": [
+    6480,
+    3240
+  ],
+  "eps_font_type": 42,
+  "font_sizes_pt": [
+    8,
+    8.5
+  ],
+  "versions": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2"
+  },
+  "outputs": {
+    "Fig6.png": {
+      "sha256": "b847ebdddbfbead07059db0f4467b1711e8dc92fff2fbb48c27eaf1f57b7e189",
+      "bytes": 604251
+    },
+    "Fig6.eps": {
+      "sha256": "79ac42db9fac0d91920aed3f577bd6d9da467921a8a17f4d50b772f70e241353",
+      "bytes": 72754
+    }
+  }
+}

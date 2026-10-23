@@ -1,0 +1,46 @@
+{
+  "alpha": 0.3,
+  "masses": [
+    0.01,
+    0.0025,
+    0.000625
+  ],
+  "C": [
+    1.0,
+    1.3,
+    0.9
+  ],
+  "B": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      -1.0,
+      1.0
+    ],
+    [
+      0.0,
+      -1.0
+    ]
+  ],
+  "edge_weights": [
+    5.0,
+    3.0
+  ],
+  "edge_cubic": 0.1,
+  "node_cubic": 0.0,
+  "u0": [
+    1.0,
+    -0.5,
+    0.7
+  ],
+  "K": 32768,
+  "grade": 13.333333333333334,
+  "T": 1.0,
+  "max_newton": 3,
+  "max_normalized_algebraic_residual": 3.4664292720627545e-16,
+  "elapsed_seconds": 36.38460549999945,
+  "probe_count": 5800,
+  "array_sha256": "b9805fa438216421cf9da2ddfdbafd26cb53ce459f9a2c4ed3acfeccb6a9a6af"
+}

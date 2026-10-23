@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use these data or scripts, please cite this archive and the accompanying manuscript."
+type: software
+title: "Data and code for a mass-uniform L1 method for nonlinear fractional networks"
+authors:
+  - family-names: Zatsepin
+    given-names: Daniil
+    affiliation: "Ryazan State University named after S.A. Yesenin"
+repository-code: "https://github.com/Alu-Vidor/s1-mass-uniform-l1-data"
+url: "https://github.com/Alu-Vidor/s1-mass-uniform-l1-data"
+abstract: >-
+  Numerical data and reproducibility scripts accompanying the manuscript
+  A mass-uniform L1 method for nonlinear fractional networks with independent
+  vanishing masses. Includes saved results, full trajectories where retained,
+  reference checks, and table and figure generation scripts.
+keywords:
+  - fractional differential equations
+  - L1 method
+  - layer-adapted meshes
+  - parameter-uniform convergence
+  - reproducibility

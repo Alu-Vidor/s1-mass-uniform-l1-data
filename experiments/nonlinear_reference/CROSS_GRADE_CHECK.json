@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "nature": "Alternative grading sensitivity diagnostic for the same independent PI method, not an additional independent method or interval certificate",
+  "checks": [
+    {
+      "alpha": 0.3,
+      "delta": "1",
+      "cross_reference_K": 16384,
+      "cross_grade": 20.0,
+      "production_reference_K": 32768,
+      "production_grade": 13.333333333333334,
+      "probe_count": 699,
+      "max_difference": 1.983190522913958e-08,
+      "argmax_time": 1.1220184543019652e-05,
+      "difference_over_L1_finest_nodal_error": 0.00022672219542550822,
+      "cross_archive": "cross_grade_a3_delta1.npz",
+      "cross_archive_sha256": "4d97c1f764f4f1ca47df156b33ff291e7ede52fbbc229a243f5356a6b39d80f5"
+    },
+    {
+      "alpha": 0.3,
+      "delta": "1/100",
+      "cross_reference_K": 16384,
+      "cross_grade": 20.0,
+      "production_reference_K": 32768,
+      "production_grade": 13.333333333333334,
+      "probe_count": 699,
+      "max_difference": 7.493391873669708e-08,
+      "argmax_time": 1.7782794100389227e-11,
+      "difference_over_L1_finest_nodal_error": 0.0005181725996780992,
+      "cross_archive": "cross_grade_a3_delta0_01.npz",
+      "cross_archive_sha256": "91886fea606305f47f1975a01b07f5521794cd9e25f46bc32ff6c8168d190b61"
+    },
+    {
+      "alpha": 0.7,
+      "delta": "1",
+      "cross_reference_K": 16384,
+      "cross_grade": 8.571428571428571,
+      "production_reference_K": 32768,
+      "production_grade": 5.714285714285714,
+      "probe_count": 699,
+      "max_difference": 9.961439395578253e-09,
+      "argmax_time": 0.0031622776601683794,
+      "difference_over_L1_finest_nodal_error": 2.4338460299761177e-05,
+      "cross_archive": "cross_grade_a7_delta1.npz",
+      "cross_archive_sha256": "ee5fc2f440f4006462ba96dba182da11b03a3707b13cbc38f88e6901660579e4"
+    },
+    {
+      "alpha": 0.7,
+      "delta": "1/100",
+      "cross_reference_K": 16384,
+      "cross_grade": 8.571428571428571,
+      "production_reference_K": 32768,
+      "production_grade": 5.714285714285714,
+      "probe_count": 699,
+      "max_difference": 3.126494085847753e-08,
+      "argmax_time": 1.584893192461124e-05,
+      "difference_over_L1_finest_nodal_error": 5.404219760577136e-05,
+      "cross_archive": "cross_grade_a7_delta0_01.npz",
+      "cross_archive_sha256": "55a6797c6dc410d17c7a8cbd01529e8333f36edc3a3c18ea401627845d1f63f1"
+    }
+  ]
+}

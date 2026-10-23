@@ -1,0 +1,94 @@
+{
+  "script_sha256": "9d90d375b453ad0eb75f6c454bd93118bd88d45e5c3edaa9006693219cdc222b",
+  "results_json_sha256": "f44b28b46f95e493f75e28afb551b05f0925ca6f1f4af39748d675dc06f443a1",
+  "audit_json_sha256": "9b359e0bfd2256537da81dbe527ac54c958617ab1c4785d0eb70594d4a7fabc8",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "matplotlib": "3.11.2",
+  "numpy": "2.5.4",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "outputs": {
+    "experiments\\scalar_mesh_comparison\\Fig4.png": "f6024622bdbc6469b5582f9bb62ef9f0cbf17c854d0984109cef902bdab20f70",
+    "experiments\\scalar_mesh_comparison\\Fig4.eps": "5e385e7bddae78f0e7ef52446fa273751e84ee984bfe7e35eb69f5c8f287ecf5",
+    "figures\\figure_4_scalar_mesh_comparison.png": "f6024622bdbc6469b5582f9bb62ef9f0cbf17c854d0984109cef902bdab20f70",
+    "figures\\figure_4_scalar_mesh_comparison.eps": "563115d5442162907f23496a28cfe5d79f64ea27e203af0aa158d5890b228bc4",
+    "manuscript\\Fig4.png": "f6024622bdbc6469b5582f9bb62ef9f0cbf17c854d0984109cef902bdab20f70",
+    "manuscript\\Fig4.eps": "7b4da3116942cf9320b449ca7126c31fc9fc953778c2b32afc3d20566c4801ac",
+    "manuscript\\preparation\\referee_experiment.texfrag": "f7cdda8530c30f48224248999bea4d5bc584f6f68d4a0b5160e89861d43d58c0",
+    "experiments\\scalar_mesh_comparison\\final_table.csv": "93bc1995c3df94f7d9ce639a632a4277239ff382d9b72bb19d5e1199a01c51b1",
+    "experiments\\scalar_mesh_comparison\\final_table.tex": "4881b707ac78e61f921848aa99ceab28770ac774ec9e640542dd5426462da2b2"
+  },
+  "no_time_integration": true,
+  "refresh_mode": "typesetting_only",
+  "preserved_file_hashes": {
+    "experiments\\scalar_mesh_comparison\\Fig4.png": "f6024622bdbc6469b5582f9bb62ef9f0cbf17c854d0984109cef902bdab20f70",
+    "experiments\\scalar_mesh_comparison\\Fig4.eps": "5e385e7bddae78f0e7ef52446fa273751e84ee984bfe7e35eb69f5c8f287ecf5",
+    "figures\\figure_4_scalar_mesh_comparison.png": "f6024622bdbc6469b5582f9bb62ef9f0cbf17c854d0984109cef902bdab20f70",
+    "figures\\figure_4_scalar_mesh_comparison.eps": "563115d5442162907f23496a28cfe5d79f64ea27e203af0aa158d5890b228bc4",
+    "manuscript\\Fig4.png": "f6024622bdbc6469b5582f9bb62ef9f0cbf17c854d0984109cef902bdab20f70",
+    "manuscript\\Fig4.eps": "7b4da3116942cf9320b449ca7126c31fc9fc953778c2b32afc3d20566c4801ac",
+    "experiments\\scalar_mesh_comparison\\final_table.csv": "93bc1995c3df94f7d9ce639a632a4277239ff382d9b72bb19d5e1199a01c51b1",
+    "experiments\\scalar_mesh_comparison\\final_table.tex": "6066ede4b3eeb567a5e755303b6f24aea0a4efc1df974b26e57564b7374040bf"
+  },
+  "figure_generation_script_sha256": "185e50e96e59694d81f4fc153faa41a036bdeb3439d57f54dd3e0d9394abb2f2",
+  "no_figure_replot": true,
+  "typesetting_change": "eq:scalar-supplement split into two gathered lines in template and generated fragment; table float unchanged",
+  "editorial_revision": {
+    "operation": "sepia_refactor",
+    "baseline_commit": "425e26f236e373e3da05ed04bf2dd97d29d63af3",
+    "scope": "Remove three repeated prose lines from the subsection and its generator template; all table/figure/result content retained.",
+    "no_time_integration": true,
+    "no_figure_replot": true,
+    "current_template_script_sha256": "a0c24d1d6e50a0312beefc83edb6376452fc5a45bee350d626b1b025ecbc0dba",
+    "previous_fragment_sha256": "777bef45d4dea9f300f287d8d7fbef676c7ce679c457fc9a95c46f833d31e9f0",
+    "current_fragment_sha256": "d152a4c1969e8b4044a5158faff5ca3af35df79526d69292a98c0868a61c11ac",
+    "historical_generation_fields_retained": true,
+    "template_matches_current_fragment": true
+  },
+  "final_copyedit": {
+    "operation": "sepia_refactor",
+    "scope": "Exact prose replacements in subsection and presentation template; presentation generator not executed.",
+    "edit_record": "sources/SEPIA_FINAL_EDITS.json",
+    "previous_provenance_sha256": "8f37031d291df360357476e3da7659bce6b91d33413ce6c65047c06a1051cf73",
+    "updated_prose_outputs": {
+      "manuscript\\preparation\\referee_experiment.texfrag": "693998abb8fe4d0c11dd4db261c9ff9201af6a2a382babd35033c7656bf45cf5"
+    },
+    "current_template_script_sha256": "b77ce505e375c24e402131a3bdd0d401f233abb792dfac9b694dc216ce3def67",
+    "current_fragment_sha256": "693998abb8fe4d0c11dd4db261c9ff9201af6a2a382babd35033c7656bf45cf5",
+    "no_time_integration": true,
+    "no_figure_replot": true,
+    "historical_generation_fields_retained": true,
+    "figure_note": "Historical figure output hashes are retained. Running preparation/plot_figures.py records current output hashes in provenance/figure_generation/figure_compliance.json.",
+    "template_note": "Recorded prose replacements synchronized; journal-specific caption edits remain in the article fragment."
+  },
+  "punctuation_revision": {
+    "operation": "requested prose punctuation refactor",
+    "scope": "Exact recorded punctuation and sentence-syntax changes in prose outputs and generator template; generator not executed.",
+    "edit_record": "sources/SEPIA_PUNCTUATION_EDITS.json",
+    "checks": "sources/SEPIA_PUNCTUATION_CHECKS.json",
+    "previous_provenance_sha256": "c93020c28c7441d145df24630a88d2749b34267346fb7971a8d0dc58192d7ccc",
+    "changed_files_raw_sha256": {
+      "manuscript/preparation/referee_experiment.texfrag": {
+        "before_raw_sha256": "693998abb8fe4d0c11dd4db261c9ff9201af6a2a382babd35033c7656bf45cf5",
+        "after_raw_sha256": "f7cdda8530c30f48224248999bea4d5bc584f6f68d4a0b5160e89861d43d58c0"
+      },
+      "experiments/scalar_mesh_comparison/final_table.tex": {
+        "before_raw_sha256": "6066ede4b3eeb567a5e755303b6f24aea0a4efc1df974b26e57564b7374040bf",
+        "after_raw_sha256": "4881b707ac78e61f921848aa99ceab28770ac774ec9e640542dd5426462da2b2"
+      },
+      "experiments/scalar_mesh_comparison/present_study.py": {
+        "before_raw_sha256": "b77ce505e375c24e402131a3bdd0d401f233abb792dfac9b694dc216ce3def67",
+        "after_raw_sha256": "04e4bb0fb4dff6797d104b82da337e257fdd6b7ed06a53ec3253025fa3769691"
+      }
+    },
+    "updated_prose_output_keys": [
+      "manuscript\\preparation\\referee_experiment.texfrag",
+      "experiments\\scalar_mesh_comparison\\final_table.tex"
+    ],
+    "solver_runs": 0,
+    "figure_replots": 0,
+    "no_time_integration": true,
+    "no_figure_replot": true,
+    "historical_generation_fields_retained": true,
+    "figure_note": "Historical figure output hashes are retained. Running preparation/plot_figures.py records current output hashes in provenance/figure_generation/figure_compliance.json."
+  }
+}

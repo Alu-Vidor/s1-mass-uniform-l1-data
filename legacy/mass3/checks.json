@@ -1,0 +1,86 @@
+{
+  "historical_source_unchanged_sha256": "c69d89ebe2c7608647fff16f146d57fd7c2150c75102ce22eca1686b301fb929",
+  "full_original_script_repeated": true,
+  "repeat_max_absolute_difference_of_linear_nodal_errors": 7.632783294297951e-17,
+  "repeat_max_absolute_difference_of_nonlinear_PL_differences": 7.632783294297951e-17,
+  "mesh_checks": [
+    {
+      "name": "equal_unit",
+      "N_actual_formula": "2*m-1",
+      "all_refinements_pass": true
+    },
+    {
+      "name": "equal_fast",
+      "N_actual_formula": "3*m-2",
+      "all_refinements_pass": true
+    },
+    {
+      "name": "near_fast",
+      "N_actual_formula": "4*m-3",
+      "all_refinements_pass": true
+    },
+    {
+      "name": "separated",
+      "N_actual_formula": "4*m-3",
+      "all_refinements_pass": true
+    },
+    {
+      "name": "separated_reversed",
+      "N_actual_formula": "4*m-3",
+      "all_refinements_pass": true
+    }
+  ],
+  "reference_checks": [
+    {
+      "name": "equal_unit",
+      "precision_decimal_digits": 80,
+      "sample_count": 82,
+      "max_absolute_difference": 1.6641296244857966e-15
+    },
+    {
+      "name": "equal_fast",
+      "precision_decimal_digits": 80,
+      "sample_count": 82,
+      "max_absolute_difference": 2.012058008825147e-15
+    },
+    {
+      "name": "near_fast",
+      "precision_decimal_digits": 80,
+      "sample_count": 82,
+      "max_absolute_difference": 1.522208846033364e-14
+    },
+    {
+      "name": "separated",
+      "precision_decimal_digits": 80,
+      "sample_count": 82,
+      "max_absolute_difference": 1.5537762058777492e-11
+    },
+    {
+      "name": "separated_reversed",
+      "precision_decimal_digits": 80,
+      "sample_count": 82,
+      "max_absolute_difference": 5.553319875506001e-11
+    }
+  ],
+  "linear_max_normalized_residual": 5.281252101087313e-14,
+  "nonlinear_max_normalized_residual": 9.910900303718773e-13,
+  "linear_last_m_doubling_orders": {
+    "equal_unit": 1.4763903179375832,
+    "equal_fast": 1.48353047533405,
+    "near_fast": 1.4695797374718194,
+    "separated": 1.4710404853104504,
+    "separated_reversed": 1.469379995643267
+  },
+  "nonlinear_last_PL_self_orders": {
+    "equal_fast": 1.5931339183385844,
+    "separated": 1.5910136488429383,
+    "separated_reversed": 1.5938247793261233
+  },
+  "all_error_sequences_strictly_decrease": true,
+  "all_PL_difference_sequences_strictly_decrease": true,
+  "limits": [
+    "Selected masses and alpha=1/2 only; no numerical proof of parameter uniformity.",
+    "Nonlinear PL differences compare two numerical solutions; no true nonlinear error bound.",
+    "80 digit reference cross-check on 82 selected points is not a certified global bound."
+  ]
+}

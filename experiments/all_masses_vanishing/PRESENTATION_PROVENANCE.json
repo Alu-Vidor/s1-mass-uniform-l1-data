@@ -1,0 +1,152 @@
+{
+  "purpose": "Presentation exports only; reads frozen results.json; no numerical solver calls",
+  "command": "./python ./experiments/all_masses_vanishing/present_results.py",
+  "scientific_input": {
+    "path": "experiments/all_masses_vanishing/results.json",
+    "sha256": "4fb79fd2ec5eedc48be26a79afdd90f9e6d3404dcbe3c01c45e11a5de7bea692",
+    "runs": 48
+  },
+  "script": {
+    "path": "experiments/all_masses_vanishing/present_results.py",
+    "sha256": "1432a8fe7db6ab4ce03ea88a23cba68be35a7afbc9df110e69c70853090a0bf2"
+  },
+  "presentation_environment": {
+    "executable": "python",
+    "python": "3.14.7",
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.4",
+    "Pillow": "13.0.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "separate_from_scientific_environment": true
+  },
+  "figure": {
+    "width_inches": 5.4,
+    "height_inches": 3.2,
+    "png_dpi": 1200,
+    "png_pixels": [
+      6480,
+      3840
+    ],
+    "fonts_points": "8-9",
+    "eps_fonttype": 42,
+    "guide": "Prescribed .004*(N/100)^(-1.5), N=100..2000; guide, not fit",
+    "panel_order": [
+      "fixed_ratios",
+      "changing_ratios"
+    ],
+    "markers": [
+      "o",
+      "s",
+      "^",
+      "D"
+    ],
+    "colors": [
+      "#0072B2",
+      "#D55E00",
+      "#009E73",
+      "#CC79A7"
+    ],
+    "text_extent_diagnostics": [
+      {
+        "text": "$\\mathdefault{10^{2}}$",
+        "inside_figure": true
+      },
+      {
+        "text": "$\\mathdefault{10^{3}}$",
+        "inside_figure": true
+      },
+      {
+        "text": "$\\mathdefault{10^{-4}}$",
+        "inside_figure": true
+      },
+      {
+        "text": "$\\mathdefault{10^{-3}}$",
+        "inside_figure": true
+      },
+      {
+        "text": "$\\mathdefault{10^{-2}}$",
+        "inside_figure": true
+      },
+      {
+        "text": "$\\mathdefault{10^{2}}$",
+        "inside_figure": true
+      },
+      {
+        "text": "$\\mathdefault{10^{3}}$",
+        "inside_figure": true
+      },
+      {
+        "text": "Actual intervals $N$",
+        "inside_figure": true
+      },
+      {
+        "text": "Actual intervals $N$",
+        "inside_figure": true
+      },
+      {
+        "text": "Nodal error $E_N$",
+        "inside_figure": true
+      },
+      {
+        "text": "(a) Fixed mass ratios",
+        "inside_figure": true
+      },
+      {
+        "text": "(b) Changing mass ratios",
+        "inside_figure": true
+      },
+      {
+        "text": "$\\delta=1$",
+        "inside_figure": true
+      },
+      {
+        "text": "$\\delta=10^{-2}$",
+        "inside_figure": true
+      },
+      {
+        "text": "$\\delta=10^{-4}$",
+        "inside_figure": true
+      },
+      {
+        "text": "$\\delta=10^{-6}$",
+        "inside_figure": true
+      },
+      {
+        "text": "$N^{-3/2}$ guide",
+        "inside_figure": true
+      }
+    ]
+  },
+  "table": {
+    "rows": 8,
+    "tex_columns": 7,
+    "E_values": "nodal errors at m=64,128,256,512",
+    "orders": "copied from full-precision source q_N using actual_N"
+  },
+  "outputs": {
+    "tables\\all_masses_vanishing.csv": {
+      "sha256": "89374b9fc7b207c8195891090b1b4c31f848e3d60da93f03e0de34f4205194b9",
+      "bytes": 1175
+    },
+    "tables\\all_masses_vanishing_table.tex": {
+      "sha256": "987139b1b62b32560fc7f63437b717bf587b3adb1f6901ed32929c46a0c51d0a",
+      "bytes": 1682
+    },
+    "figures\\figure_3_all_masses_vanishing.png": {
+      "sha256": "434fa2e40427fbf0c8f84e40d48f46f1e8e48559fafd4cc7d273399d3a8c8b5a",
+      "bytes": 709248
+    },
+    "figures\\figure_3_all_masses_vanishing.svg": {
+      "sha256": "7c72c36adc7972a96907f74d7e2d5176af06d791f708e83e0b37d2724ceb2768",
+      "bytes": 72991
+    },
+    "figures\\figure_3_all_masses_vanishing.eps": {
+      "sha256": "e79db12a0f467fe40723c82c5490f980af08dbe39e5dd10bcdd6660796573b8a",
+      "bytes": 94021
+    }
+  },
+  "limits": [
+    "Prescribed slope is not a regression or fitted observed order.",
+    "Finite selected paths do not establish mass-uniformity."
+  ]
+}

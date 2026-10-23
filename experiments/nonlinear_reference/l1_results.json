@@ -1,0 +1,415 @@
+{
+  "parameters": {
+    "T": 1,
+    "B": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        -1.0,
+        1.0
+      ],
+      [
+        0.0,
+        -1.0
+      ]
+    ],
+    "C": [
+      1.0,
+      1.3,
+      0.9
+    ],
+    "edge_weights": [
+      5.0,
+      3.0
+    ],
+    "edge_cubic": 0.1,
+    "u0": [
+      1.0,
+      -0.5,
+      0.7
+    ],
+    "load": [
+      0.2,
+      -0.1,
+      0.3
+    ],
+    "initial_incompatibility": [
+      -9.9875,
+      13.855900000000002,
+      -4.4484
+    ],
+    "description": "F(v)=C v+B diag(edge_weights)[B^T v+0.1(B^T v)^3]",
+    "mass_ratios": [
+      "1",
+      "1/4",
+      "1/16"
+    ]
+  },
+  "rows": [
+    {
+      "case": "a3_delta_1_1_m16",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 16,
+      "N": 59,
+      "max_normalized_residual": 4.657979185576836e-13,
+      "max_newton_updates": 3,
+      "probe_count": 479,
+      "min_step": 2.913225216616411e-13
+    },
+    {
+      "case": "a3_delta_1_1_m32",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 32,
+      "N": 123,
+      "max_normalized_residual": 4.256420867152254e-13,
+      "max_newton_updates": 3,
+      "probe_count": 735,
+      "min_step": 2.3869795029440866e-15,
+      "previous_PL_difference": 0.01830591282026084
+    },
+    {
+      "case": "a3_delta_1_1_m64",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 64,
+      "N": 251,
+      "max_normalized_residual": 4.951128811970297e-13,
+      "max_newton_updates": 3,
+      "probe_count": 1247,
+      "min_step": 2.168404344971009e-17,
+      "previous_PL_difference": 0.006159390124876651
+    },
+    {
+      "case": "a3_delta_1_1_m128",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 128,
+      "N": 507,
+      "max_normalized_residual": 4.584619118647627e-13,
+      "max_newton_updates": 3,
+      "probe_count": 2271,
+      "min_step": 2.0328790734103208e-19,
+      "previous_PL_difference": 0.0017889026108341977
+    },
+    {
+      "case": "a3_delta_1_1_m256",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 256,
+      "N": 1019,
+      "max_normalized_residual": 4.912361248657297e-13,
+      "max_newton_updates": 3,
+      "probe_count": 4319,
+      "min_step": 1.9587636905255695e-21,
+      "previous_PL_difference": 0.0004723289918372453
+    },
+    {
+      "case": "a3_delta_1_100_m16",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 16,
+      "N": 76,
+      "max_normalized_residual": 3.754955222768075e-13,
+      "max_newton_updates": 3,
+      "probe_count": 668,
+      "min_step": 2.507217523872729e-19
+    },
+    {
+      "case": "a3_delta_1_100_m32",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 32,
+      "N": 154,
+      "max_normalized_residual": 4.807572539124687e-13,
+      "max_newton_updates": 3,
+      "probe_count": 980,
+      "min_step": 2.0117032497289633e-21,
+      "previous_PL_difference": 0.0312675368615494
+    },
+    {
+      "case": "a3_delta_1_100_m64",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 64,
+      "N": 314,
+      "max_normalized_residual": 4.966236309431248e-13,
+      "max_newton_updates": 3,
+      "probe_count": 1620,
+      "min_step": 1.7784383169890095e-23,
+      "previous_PL_difference": 0.009330988048821015
+    },
+    {
+      "case": "a3_delta_1_100_m128",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 128,
+      "N": 634,
+      "max_normalized_residual": 4.838641054256902e-13,
+      "max_newton_updates": 3,
+      "probe_count": 2900,
+      "min_step": 1.6802106192483375e-25,
+      "previous_PL_difference": 0.0026932228820246706
+    },
+    {
+      "case": "a3_delta_1_100_m256",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 256,
+      "N": 1274,
+      "max_normalized_residual": 4.951450466248151e-13,
+      "max_newton_updates": 3,
+      "probe_count": 5460,
+      "min_step": 1.5903435849255598e-27,
+      "previous_PL_difference": 0.0007112184002135979
+    },
+    {
+      "case": "a7_delta_1_1_m16",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 16,
+      "N": 59,
+      "max_normalized_residual": 4.817330207581285e-13,
+      "max_newton_updates": 3,
+      "probe_count": 444,
+      "min_step": 4.172325134277344e-06
+    },
+    {
+      "case": "a7_delta_1_1_m32",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 32,
+      "N": 123,
+      "max_normalized_residual": 4.782998725786514e-13,
+      "max_newton_updates": 3,
+      "probe_count": 700,
+      "min_step": 5.364418029785156e-07,
+      "previous_PL_difference": 0.015784202651240718
+    },
+    {
+      "case": "a7_delta_1_1_m64",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 64,
+      "N": 251,
+      "max_normalized_residual": 4.673852182597457e-13,
+      "max_newton_updates": 3,
+      "probe_count": 1212,
+      "min_step": 7.264316082000732e-08,
+      "previous_PL_difference": 0.005788305824742851
+    },
+    {
+      "case": "a7_delta_1_1_m128",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 128,
+      "N": 507,
+      "max_normalized_residual": 4.981729662732495e-13,
+      "max_newton_updates": 3,
+      "probe_count": 2236,
+      "min_step": 9.778887033462524e-09,
+      "previous_PL_difference": 0.0019383521008045357
+    },
+    {
+      "case": "a7_delta_1_1_m256",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 256,
+      "N": 1019,
+      "max_normalized_residual": 4.886220383426026e-13,
+      "max_newton_updates": 2,
+      "probe_count": 4284,
+      "min_step": 1.3387762010097504e-09,
+      "previous_PL_difference": 0.0007073698721553091
+    },
+    {
+      "case": "a7_delta_1_100_m16",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 16,
+      "N": 76,
+      "max_normalized_residual": 2.1796383747001082e-13,
+      "max_newton_updates": 3,
+      "probe_count": 598,
+      "min_step": 1.0710209608078003e-08
+    },
+    {
+      "case": "a7_delta_1_100_m32",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 32,
+      "N": 154,
+      "max_normalized_residual": 3.2943007810766923e-13,
+      "max_newton_updates": 3,
+      "probe_count": 910,
+      "min_step": 1.3387762010097504e-09,
+      "previous_PL_difference": 0.021925552879356214
+    },
+    {
+      "case": "a7_delta_1_100_m64",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 64,
+      "N": 314,
+      "max_normalized_residual": 4.849211049307063e-13,
+      "max_newton_updates": 3,
+      "probe_count": 1550,
+      "min_step": 1.4551915228366852e-10,
+      "previous_PL_difference": 0.0092343645120724
+    },
+    {
+      "case": "a7_delta_1_100_m128",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 128,
+      "N": 634,
+      "max_normalized_residual": 4.929203097814415e-13,
+      "max_newton_updates": 3,
+      "probe_count": 2830,
+      "min_step": 1.5916157281026244e-11,
+      "previous_PL_difference": 0.0030000717132704358
+    },
+    {
+      "case": "a7_delta_1_100_m256",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 256,
+      "N": 1274,
+      "max_normalized_residual": 4.963355103797259e-13,
+      "max_newton_updates": 3,
+      "probe_count": 5390,
+      "min_step": 1.8758328224066645e-12,
+      "previous_PL_difference": 0.0010149191901765164
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "elapsed_seconds": 2.4545669555664062
+}

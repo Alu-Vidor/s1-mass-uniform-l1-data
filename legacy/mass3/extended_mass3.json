@@ -1,0 +1,2490 @@
+{
+  "source": "legacy/mass3/mass3_l1_check.py",
+  "source_sha256": "c69d89ebe2c7608647fff16f146d57fd7c2150c75102ce22eca1686b301fb929",
+  "alpha": 0.5,
+  "T": 1,
+  "python": "3.12.14",
+  "arithmetic": {
+    "solution": "float64",
+    "longdouble_epsilon": 2.220446049250313e-16,
+    "grid_and_differences": "Exact fractions; exact distances rounded once to float64 after subtraction; subsequent arithmetic longdouble",
+    "tolerance_merging": false
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "linear": [
+    {
+      "name": "equal_unit",
+      "masses_exact": [
+        "1",
+        "1",
+        "1"
+      ],
+      "reference": {
+        "eigenvalues": [
+          1.0632642753036095,
+          4.590707887142219,
+          13.546027837554204
+        ],
+        "spectral_eigenpair_absolute_residual": 1.532107773982716e-14,
+        "reference_evaluation": "scipy erfcx float64; closed alpha=1/2 formula, not interval arithmetic"
+      },
+      "runs": [
+        {
+          "m": 16,
+          "N": 64,
+          "K": 31,
+          "minimum_step": 1.0828124103295972e-06,
+          "max_normalized_full_residual": 2.9957852190798996e-16,
+          "max_normalized_full_residual_by_component": [
+            2.9957852190798996e-16,
+            2.0289345380960667e-16,
+            1.1373761853936047e-16
+          ],
+          "max_absolute_full_residual": 2.9476421303797906e-14,
+          "newton_updates": 31,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 31,
+          "history_scalar_weighted_vector_terms_including_residual_check": 961,
+          "expected_history_terms_K_squared": 961,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.11624262945851632,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04073842841071551
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.011739874478851803,
+          "nodal_error_by_component": [
+            0.010697929119940719,
+            0.011739874478851803,
+            0.0017678343247452266
+          ],
+          "sampled_PL_error": 0.01903173488871973,
+          "sampled_exact_interpolation_error": 0.007537744212580438,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "B3": 64,
+          "N_actual": 31,
+          "scaled_nodal_error_N_actual_to_1_5": 2.0263104971709107
+        },
+        {
+          "m": 32,
+          "N": 128,
+          "K": 63,
+          "minimum_step": 6.348012922776867e-08,
+          "max_normalized_full_residual": 5.421316401755868e-16,
+          "max_normalized_full_residual_by_component": [
+            5.421316401755868e-16,
+            3.3238054792099943e-16,
+            2.900596402558247e-16
+          ],
+          "max_absolute_full_residual": 2.0372592501871623e-13,
+          "newton_updates": 63,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 63,
+          "history_scalar_weighted_vector_terms_including_residual_check": 3969,
+          "expected_history_terms_K_squared": 3969,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.11618035927504469,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04094324276300043
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.004579762808303217,
+          "nodal_error_by_component": [
+            0.004145581969542733,
+            0.004579762808303217,
+            0.000705158886610352
+          ],
+          "sampled_PL_error": 0.006486857602390511,
+          "sampled_exact_interpolation_error": 0.0019375292184947157,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.3580721970579748,
+          "B3": 128,
+          "N_actual": 63,
+          "scaled_nodal_error_N_actual_to_1_5": 2.2900966428878538
+        },
+        {
+          "m": 64,
+          "N": 256,
+          "K": 127,
+          "minimum_step": 3.844015376046128e-09,
+          "max_normalized_full_residual": 6.545050611943778e-16,
+          "max_normalized_full_residual_by_component": [
+            6.545050611943778e-16,
+            4.484756966695905e-16,
+            2.900596515521626e-16
+          ],
+          "max_absolute_full_residual": 6.91335877434085e-13,
+          "newton_updates": 127,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 127,
+          "history_scalar_weighted_vector_terms_including_residual_check": 16129,
+          "expected_history_terms_K_squared": 16129,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.11615976956579427,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04103118103492684
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.001703275542142474,
+          "nodal_error_by_component": [
+            0.0015361365288453221,
+            0.001703275542142474,
+            0.00026570451189777966
+          ],
+          "sampled_PL_error": 0.0021892088536697163,
+          "sampled_exact_interpolation_error": 0.00048760967311842207,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.426961039827182,
+          "B3": 256,
+          "N_actual": 127,
+          "scaled_nodal_error_N_actual_to_1_5": 2.437757446490492
+        },
+        {
+          "m": 128,
+          "N": 512,
+          "K": 255,
+          "minimum_step": 2.3650442906278766e-10,
+          "max_normalized_full_residual": 4.479146798134775e-15,
+          "max_normalized_full_residual_by_component": [
+            4.479146798134775e-15,
+            4.673468851885799e-16,
+            6.538350951095247e-16
+          ],
+          "max_absolute_full_residual": 8.181788579975091e-13,
+          "newton_updates": 255,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 255,
+          "history_scalar_weighted_vector_terms_including_residual_check": 65025,
+          "expected_history_terms_K_squared": 65025,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.11615361782382189,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04105744979664916
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.0006224993811072832,
+          "nodal_error_by_component": [
+            0.000560468210945575,
+            0.0006224993811072832,
+            9.744704219477596e-05
+          ],
+          "sampled_PL_error": 0.0007440693702614742,
+          "sampled_exact_interpolation_error": 0.0001221056939644527,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.4521675334748356,
+          "B3": 512,
+          "N_actual": 255,
+          "scaled_nodal_error_N_actual_to_1_5": 2.53483207921063
+        },
+        {
+          "m": 256,
+          "B3": 1024,
+          "N_actual": 511,
+          "max_normalized_full_residual": 1.8029856160170947e-15,
+          "max_normalized_full_residual_by_component": [
+            1.8029856160170947e-15,
+            6.963809437822701e-16,
+            5.715869266247585e-16
+          ],
+          "max_absolute_full_residual": 8.17729217672536e-12,
+          "newton_updates": 511,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 511,
+          "history_scalar_weighted_vector_terms_including_residual_check": 261121,
+          "expected_history_terms_K_squared": 261121,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.11615147582428925,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04106677236040329
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.0002251735209278516,
+          "nodal_error_by_component": [
+            0.00020255122961665428,
+            0.0002251735209278516,
+            3.532699322067456e-05
+          ],
+          "sampled_PL_error": 0.00025556926236877664,
+          "sampled_exact_interpolation_error": 3.054024175075387e-05,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.467035217843103,
+          "scaled_nodal_error_N_actual_to_1_5": 2.601049809569383
+        },
+        {
+          "m": 512,
+          "B3": 2048,
+          "N_actual": 1023,
+          "max_normalized_full_residual": 6.959676078448302e-15,
+          "max_normalized_full_residual_by_component": [
+            6.959676078448302e-15,
+            1.8079422294846024e-15,
+            1.9955800464201117e-15
+          ],
+          "max_absolute_full_residual": 1.604349986195075e-11,
+          "newton_updates": 1023,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 1023,
+          "history_scalar_weighted_vector_terms_including_residual_check": 1046529,
+          "expected_history_terms_K_squared": 1046529,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.11615072292878778,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04107028802194507
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 8.092441111143267e-05,
+          "nodal_error_by_component": [
+            7.274802068835129e-05,
+            8.092441111143267e-05,
+            1.2714614119752055e-05
+          ],
+          "sampled_PL_error": 8.852280241236632e-05,
+          "sampled_exact_interpolation_error": 7.635817878215434e-06,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.4763903179375832,
+          "scaled_nodal_error_N_actual_to_1_5": 2.6478476800534274
+        }
+      ]
+    },
+    {
+      "name": "equal_fast",
+      "masses_exact": [
+        "1/10000",
+        "1/10000",
+        "1"
+      ],
+      "reference": {
+        "eigenvalues": [
+          2.1466290057227133,
+          23849.13529310484,
+          129152.61807788938
+        ],
+        "spectral_eigenpair_absolute_residual": 2.546585164964199e-11,
+        "reference_evaluation": "scipy erfcx float64; closed alpha=1/2 formula, not interval arithmetic"
+      },
+      "runs": [
+        {
+          "m": 16,
+          "N": 64,
+          "K": 46,
+          "minimum_step": 1.8932292029552004e-13,
+          "max_normalized_full_residual": 1.6647211462010977e-16,
+          "max_normalized_full_residual_by_component": [
+            1.6647211462010977e-16,
+            1.4944561028922438e-16,
+            9.500050121497301e-17
+          ],
+          "max_absolute_full_residual": 7.101152998956195e-12,
+          "newton_updates": 46,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 46,
+          "history_scalar_weighted_vector_terms_including_residual_check": 2116,
+          "expected_history_terms_K_squared": 2116,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04324654027456942,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04244136665546755
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.027027825999554306,
+          "nodal_error_by_component": [
+            0.024967414842323343,
+            0.027027825999554306,
+            0.00019109131603375906
+          ],
+          "sampled_PL_error": 0.052829376477226186,
+          "sampled_exact_interpolation_error": 0.02764591202855529,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "B3": 64,
+          "N_actual": 46,
+          "scaled_nodal_error_N_actual_to_1_5": 8.432335194151612
+        },
+        {
+          "m": 32,
+          "N": 128,
+          "K": 94,
+          "minimum_step": 1.039233137602245e-14,
+          "max_normalized_full_residual": 2.3015670153975465e-16,
+          "max_normalized_full_residual_by_component": [
+            2.3015670153975465e-16,
+            1.7263259691374082e-16,
+            1.983046939379325e-16
+          ],
+          "max_absolute_full_residual": 1.3810957932847145e-10,
+          "newton_updates": 94,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 94,
+          "history_scalar_weighted_vector_terms_including_residual_check": 8836,
+          "expected_history_terms_K_squared": 8836,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04324951782982217,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.043384158731016004
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.011832174944587215,
+          "nodal_error_by_component": [
+            0.010518194805139602,
+            0.011832174944587215,
+            7.117513389656716e-05
+          ],
+          "sampled_PL_error": 0.01897859658933501,
+          "sampled_exact_interpolation_error": 0.007466228407182196,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.19173018377188,
+          "B3": 128,
+          "N_actual": 94,
+          "scaled_nodal_error_N_actual_to_1_5": 10.783416075880702
+        },
+        {
+          "m": 64,
+          "N": 256,
+          "K": 190,
+          "minimum_step": 6.096482283937161e-16,
+          "max_normalized_full_residual": 2.636905929820909e-16,
+          "max_normalized_full_residual_by_component": [
+            2.0049736387477251e-16,
+            1.7895768718993107e-16,
+            2.636905929820909e-16
+          ],
+          "max_absolute_full_residual": 1.2876061328270794e-10,
+          "newton_updates": 190,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 190,
+          "history_scalar_weighted_vector_terms_including_residual_check": 36100,
+          "expected_history_terms_K_squared": 36100,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.0432503688453566,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04371869451228391
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.004591528027779207,
+          "nodal_error_by_component": [
+            0.004076787133809656,
+            0.004591528027779207,
+            2.366441401566166e-05
+          ],
+          "sampled_PL_error": 0.0065017552762348385,
+          "sampled_exact_interpolation_error": 0.0019238042532482291,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.3656690313912603,
+          "B3": 256,
+          "N_actual": 190,
+          "scaled_nodal_error_N_actual_to_1_5": 12.025070774484478
+        },
+        {
+          "m": 128,
+          "N": 512,
+          "K": 382,
+          "minimum_step": 3.692871492395321e-17,
+          "max_normalized_full_residual": 3.762766360800455e-16,
+          "max_normalized_full_residual_by_component": [
+            3.5670634249820904e-16,
+            2.7664810342186814e-16,
+            3.762766360800455e-16
+          ],
+          "max_absolute_full_residual": 9.013830237769582e-10,
+          "newton_updates": 382,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 382,
+          "history_scalar_weighted_vector_terms_including_residual_check": 145924,
+          "expected_history_terms_K_squared": 145924,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04325121748039437,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04383460677900203
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.0017092890251504123,
+          "nodal_error_by_component": [
+            0.001510788056128698,
+            0.0017092890251504123,
+            9.024820181696702e-06
+          ],
+          "sampled_PL_error": 0.002190078393615985,
+          "sampled_exact_interpolation_error": 0.0004840663757229857,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.4255779879812072,
+          "B3": 512,
+          "N_actual": 382,
+          "scaled_nodal_error_N_actual_to_1_5": 12.761759282516566
+        },
+        {
+          "m": 256,
+          "B3": 1024,
+          "N_actual": 766,
+          "max_normalized_full_residual": 8.112398418727041e-16,
+          "max_normalized_full_residual_by_component": [
+            6.930791750631457e-16,
+            2.1227363708339066e-16,
+            8.112398418727041e-16
+          ],
+          "max_absolute_full_residual": 4.648280926833337e-09,
+          "newton_updates": 766,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 766,
+          "history_scalar_weighted_vector_terms_including_residual_check": 586756,
+          "expected_history_terms_K_squared": 586756,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04325152415846151,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.043899140014042354
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.000624007115316294,
+          "nodal_error_by_component": [
+            0.0005511440706570392,
+            0.000624007115316294,
+            3.1998180422820877e-06
+          ],
+          "sampled_PL_error": 0.0007445841089789573,
+          "sampled_exact_interpolation_error": 0.0001212149934725626,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.4537619793874885,
+          "scaled_nodal_error_N_actual_to_1_5": 13.229173012920368
+        },
+        {
+          "m": 512,
+          "B3": 2048,
+          "N_actual": 1534,
+          "max_normalized_full_residual": 1.2969428539254874e-15,
+          "max_normalized_full_residual_by_component": [
+            7.886763040349192e-16,
+            7.626058037799802e-16,
+            1.2969428539254874e-15
+          ],
+          "max_absolute_full_residual": 2.6586112256143934e-08,
+          "newton_updates": 1534,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 1534,
+          "history_scalar_weighted_vector_terms_including_residual_check": 2353156,
+          "expected_history_terms_K_squared": 2353156,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.043251612016913854,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.043922647827221994
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.000225340613805608,
+          "nodal_error_by_component": [
+            0.00019895175047957014,
+            0.000225340613805608,
+            1.1268776458628338e-06
+          ],
+          "sampled_PL_error": 0.0002555001462264117,
+          "sampled_exact_interpolation_error": 3.0315094908361928e-05,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.4694551214807914,
+          "scaled_nodal_error_N_actual_to_1_5": 13.538717065674424
+        },
+        {
+          "m": 1024,
+          "B3": 4096,
+          "N_actual": 3070,
+          "max_normalized_full_residual": 9.029684452830801e-15,
+          "max_normalized_full_residual_by_component": [
+            6.0248362245007e-15,
+            4.829530291429717e-16,
+            9.029684452830801e-15
+          ],
+          "max_absolute_full_residual": 4.597946839934863e-08,
+          "newton_updates": 3070,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 3070,
+          "history_scalar_weighted_vector_terms_including_residual_check": 9424900,
+          "expected_history_terms_K_squared": 9424900,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04325165311410467,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04393110289580948
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 8.058464562130108e-05,
+          "nodal_error_by_component": [
+            7.09346724641069e-05,
+            8.058464562130108e-05,
+            3.9538730833843516e-07
+          ],
+          "sampled_PL_error": 8.800109996318084e-05,
+          "sampled_exact_interpolation_error": 7.579646965016895e-06,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.48353047533405,
+          "scaled_nodal_error_N_actual_to_1_5": 13.707550786382637
+        }
+      ]
+    },
+    {
+      "name": "near_fast",
+      "masses_exact": [
+        "1/10000",
+        "1000002000001/10000000000000000",
+        "1"
+      ],
+      "reference": {
+        "eigenvalues": [
+          2.146629005580361,
+          23849.11891940961,
+          129152.44845186378
+        ],
+        "spectral_eigenpair_absolute_residual": 2.546585164964199e-11,
+        "reference_evaluation": "scipy erfcx float64; closed alpha=1/2 formula, not interval arithmetic"
+      },
+      "runs": [
+        {
+          "m": 16,
+          "N": 64,
+          "K": 61,
+          "minimum_step": 7.493002610214468e-19,
+          "max_normalized_full_residual": 4.484574841277681e-14,
+          "max_normalized_full_residual_by_component": [
+            4.484574841277681e-14,
+            9.710853430227125e-15,
+            1.3203756465987117e-14
+          ],
+          "max_absolute_full_residual": 2.9075530316724496e-09,
+          "newton_updates": 61,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 61,
+          "history_scalar_weighted_vector_terms_including_residual_check": 3721,
+          "expected_history_terms_K_squared": 3721,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04324654035143452,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04244150845124961
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.027027675222694336,
+          "nodal_error_by_component": [
+            0.02496731648769346,
+            0.027027675222694336,
+            0.00019109130095418259
+          ],
+          "sampled_PL_error": 0.0528290382322569,
+          "sampled_exact_interpolation_error": 0.027645784925599076,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "B3": 64,
+          "N_actual": 61,
+          "scaled_nodal_error_N_actual_to_1_5": 12.876666390562084
+        },
+        {
+          "m": 32,
+          "N": 128,
+          "K": 125,
+          "minimum_step": 4.1144667646422654e-20,
+          "max_normalized_full_residual": 4.997200660887645e-14,
+          "max_normalized_full_residual_by_component": [
+            4.997200660887645e-14,
+            2.3759397924403427e-14,
+            1.3689701128274753e-14
+          ],
+          "max_absolute_full_residual": 6.405270863707457e-08,
+          "newton_updates": 125,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 125,
+          "history_scalar_weighted_vector_terms_including_residual_check": 15625,
+          "expected_history_terms_K_squared": 15625,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.043249517888952094,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04338432996260139
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.011832047471823426,
+          "nodal_error_by_component": [
+            0.010518100534814612,
+            0.011832047471823426,
+            7.117509928666887e-05
+          ],
+          "sampled_PL_error": 0.01897836965569752,
+          "sampled_exact_interpolation_error": 0.007466166381004974,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.1917376783770366,
+          "B3": 128,
+          "N_actual": 125,
+          "scaled_nodal_error_N_actual_to_1_5": 16.53578903750107
+        },
+        {
+          "m": 64,
+          "N": 256,
+          "K": 253,
+          "minimum_step": 2.4140725980496906e-21,
+          "max_normalized_full_residual": 4.51718164173187e-14,
+          "max_normalized_full_residual_by_component": [
+            4.51718164173187e-14,
+            2.0077140682761782e-14,
+            1.3977815694669111e-14
+          ],
+          "max_absolute_full_residual": 1.552911103597232e-07,
+          "newton_updates": 253,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 253,
+          "history_scalar_weighted_vector_terms_including_residual_check": 64009,
+          "expected_history_terms_K_squared": 64009,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.0432503689102009,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.043718873849424605
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.004591433376651438,
+          "nodal_error_by_component": [
+            0.004076701510080771,
+            0.004591433376651438,
+            2.3664360662312145e-05
+          ],
+          "sampled_PL_error": 0.006501592568002035,
+          "sampled_exact_interpolation_error": 0.0019237719652918095,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.365683229027799,
+          "B3": 256,
+          "N_actual": 253,
+          "scaled_nodal_error_N_actual_to_1_5": 18.47689831309733
+        },
+        {
+          "m": 128,
+          "N": 512,
+          "K": 509,
+          "minimum_step": 1.4624115102195074e-22,
+          "max_normalized_full_residual": 5.272335547638482e-14,
+          "max_normalized_full_residual_by_component": [
+            5.272335547638482e-14,
+            2.604328290926215e-14,
+            1.45380275859232e-14
+          ],
+          "max_absolute_full_residual": 1.2410440289323255e-06,
+          "newton_updates": 509,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 509,
+          "history_scalar_weighted_vector_terms_including_residual_check": 259081,
+          "expected_history_terms_K_squared": 259081,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.0432512175427229,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04383478396575613
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.0017092163250438663,
+          "nodal_error_by_component": [
+            0.0015107198936753496,
+            0.0017092163250438663,
+            9.024757003095463e-06
+          ],
+          "sampled_PL_error": 0.0021899731606038475,
+          "sampled_exact_interpolation_error": 0.0004840501323895019,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.425609610067512,
+          "B3": 512,
+          "N_actual": 509,
+          "scaled_nodal_error_N_actual_to_1_5": 19.62789408044971
+        },
+        {
+          "m": 256,
+          "B3": 1024,
+          "N_actual": 1021,
+          "max_normalized_full_residual": 5.281252101087313e-14,
+          "max_normalized_full_residual_by_component": [
+            5.281252101087313e-14,
+            2.597202714442656e-14,
+            1.3942144128343677e-14
+          ],
+          "max_absolute_full_residual": 1.5900486098341382e-06,
+          "newton_updates": 1021,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 1021,
+          "history_scalar_weighted_vector_terms_including_residual_check": 1042441,
+          "expected_history_terms_K_squared": 1042441,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04325152422023332,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04389931496548383
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.0006239528564370711,
+          "nodal_error_by_component": [
+            0.0005510935274372075,
+            0.0006239528564370711,
+            3.199792001085111e-06
+          ],
+          "sampled_PL_error": 0.0007445159175735461,
+          "sampled_exact_interpolation_error": 0.00012120703735063465,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.4538260680136998,
+          "scaled_nodal_error_N_actual_to_1_5": 20.35590382809877
+        },
+        {
+          "m": 512,
+          "B3": 2048,
+          "N_actual": 2045,
+          "max_normalized_full_residual": 5.238679097423048e-14,
+          "max_normalized_full_residual_by_component": [
+            5.238679097423048e-14,
+            2.7653639157349748e-14,
+            1.4507814237106924e-14
+          ],
+          "max_absolute_full_residual": 1.3940521556621288e-05,
+          "newton_updates": 2045,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 2045,
+          "history_scalar_weighted_vector_terms_including_residual_check": 4182025,
+          "expected_history_terms_K_squared": 4182025,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04325161207606723,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.043922821045302124
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.0002253015581483997,
+          "nodal_error_by_component": [
+            0.00019891493123258552,
+            0.0002253015581483997,
+            1.1268641578465743e-06
+          ],
+          "sampled_PL_error": 0.0002554534826476884,
+          "sampled_exact_interpolation_error": 3.031112022874871e-05,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.4695797374718194,
+          "scaled_nodal_error_N_actual_to_1_5": 20.835511363300668
+        }
+      ]
+    },
+    {
+      "name": "separated",
+      "masses_exact": [
+        "1/100000000",
+        "1/100",
+        "1"
+      ],
+      "reference": {
+        "eigenvalues": [
+          2.139415661033783,
+          515.0935611704573,
+          600000416.6670232
+        ],
+        "spectral_eigenpair_absolute_residual": 2.384185791015625e-07,
+        "reference_evaluation": "scipy erfcx float64; closed alpha=1/2 formula, not interval arithmetic"
+      },
+      "runs": [
+        {
+          "m": 16,
+          "N": 64,
+          "K": 61,
+          "minimum_step": 1.97446606831969e-21,
+          "max_normalized_full_residual": 3.548357839045228e-16,
+          "max_normalized_full_residual_by_component": [
+            3.548357839045228e-16,
+            1.3266417443963326e-16,
+            1.0696527951626624e-16
+          ],
+          "max_absolute_full_residual": 1.079518756053055e-07,
+          "newton_updates": 61,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 61,
+          "history_scalar_weighted_vector_terms_including_residual_check": 3721,
+          "expected_history_terms_K_squared": 3721,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.044340018297793465,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04985988163039676
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.037611842025945585,
+          "nodal_error_by_component": [
+            0.037611842025945585,
+            0.013283695840707682,
+            0.0001490530319427641
+          ],
+          "sampled_PL_error": 0.06912048653983793,
+          "sampled_exact_interpolation_error": 0.03307737418915846,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "B3": 64,
+          "N_actual": 61,
+          "scaled_nodal_error_N_actual_to_1_5": 17.919230496597024
+        },
+        {
+          "m": 32,
+          "N": 128,
+          "K": 125,
+          "minimum_step": 1.082365428948416e-22,
+          "max_normalized_full_residual": 3.469919623601535e-16,
+          "max_normalized_full_residual_by_component": [
+            3.469919623601535e-16,
+            1.6969014714168106e-16,
+            2.63690592982091e-16
+          ],
+          "max_absolute_full_residual": 3.0152190694243686e-07,
+          "newton_updates": 125,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 125,
+          "history_scalar_weighted_vector_terms_including_residual_check": 15625,
+          "expected_history_terms_K_squared": 15625,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04434909915161381,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.0498563312842957
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.015341948976436037,
+          "nodal_error_by_component": [
+            0.015341948976436037,
+            0.0051653941010298965,
+            5.326473675143495e-05
+          ],
+          "sampled_PL_error": 0.023946940150083695,
+          "sampled_exact_interpolation_error": 0.00881590885241218,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.2937051951893377,
+          "B3": 128,
+          "N_actual": 125,
+          "scaled_nodal_error_N_actual_to_1_5": 21.441025511652686
+        },
+        {
+          "m": 64,
+          "N": 256,
+          "K": 253,
+          "minimum_step": 6.345434067744378e-24,
+          "max_normalized_full_residual": 7.170235312409785e-16,
+          "max_normalized_full_residual_by_component": [
+            3.548364143064776e-16,
+            1.8225068710362422e-16,
+            7.170235312409785e-16
+          ],
+          "max_absolute_full_residual": 4.087486792092587e-06,
+          "newton_updates": 253,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 253,
+          "history_scalar_weighted_vector_terms_including_residual_check": 64009,
+          "expected_history_terms_K_squared": 64009,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04435248820719573,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.049855142303811745
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.005807422280544983,
+          "nodal_error_by_component": [
+            0.005807422280544983,
+            0.0018492558995381048,
+            1.7682123509832337e-05
+          ],
+          "sampled_PL_error": 0.0079934136747849,
+          "sampled_exact_interpolation_error": 0.0022356259333933814,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.4015119213655411,
+          "B3": 256,
+          "N_actual": 253,
+          "scaled_nodal_error_N_actual_to_1_5": 23.370294663210885
+        },
+        {
+          "m": 128,
+          "N": 512,
+          "K": 509,
+          "minimum_step": 3.8424660531609084e-25,
+          "max_normalized_full_residual": 5.500342993126901e-16,
+          "max_normalized_full_residual_by_component": [
+            3.421977593991076e-16,
+            3.4268702186847834e-16,
+            5.500342993126901e-16
+          ],
+          "max_absolute_full_residual": 1.6603938069181812e-05,
+          "newton_updates": 509,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 509,
+          "history_scalar_weighted_vector_terms_including_residual_check": 259081,
+          "expected_history_terms_K_squared": 259081,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.0443532792257407,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04985475142925683
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.0021418087159219557,
+          "nodal_error_by_component": [
+            0.0021418087159219557,
+            0.0006801366467861225,
+            6.483357216424679e-06
+          ],
+          "sampled_PL_error": 0.0026914423342022653,
+          "sampled_exact_interpolation_error": 0.0005606250690763925,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.4390683025673379,
+          "B3": 512,
+          "N_actual": 509,
+          "scaled_nodal_error_N_actual_to_1_5": 24.595596239476144
+        },
+        {
+          "m": 256,
+          "B3": 1024,
+          "N_actual": 1021,
+          "max_normalized_full_residual": 1.1381573900900625e-15,
+          "max_normalized_full_residual_by_component": [
+            4.249373483876389e-16,
+            3.377444155150992e-16,
+            1.1381573900900625e-15
+          ],
+          "max_absolute_full_residual": 4.728904907097542e-05,
+          "newton_updates": 1021,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 1021,
+          "history_scalar_weighted_vector_terms_including_residual_check": 1042441,
+          "expected_history_terms_K_squared": 1042441,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04435362423911887,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.04985461506175115
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.0007788130846037022,
+          "nodal_error_by_component": [
+            0.0007788130846037022,
+            0.00023864521444963427,
+            2.292957602345602e-06
+          ],
+          "sampled_PL_error": 0.000916116317658866,
+          "sampled_exact_interpolation_error": 0.00014029487254096917,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.4594806116668855,
+          "scaled_nodal_error_N_actual_to_1_5": 25.408080252705467
+        },
+        {
+          "m": 512,
+          "B3": 2048,
+          "N_actual": 2045,
+          "max_normalized_full_residual": 2.7495897820927886e-15,
+          "max_normalized_full_residual_by_component": [
+            5.175373174563345e-16,
+            1.1868795493188998e-15,
+            2.7495897820927886e-15
+          ],
+          "max_absolute_full_residual": 9.779510478419295e-05,
+          "newton_updates": 2045,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 2045,
+          "history_scalar_weighted_vector_terms_including_residual_check": 4182025,
+          "expected_history_terms_K_squared": 4182025,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04435374081912316,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              -0.049854565427222164
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            0
+          ],
+          "nodal_error": 0.00028093505158111043,
+          "nodal_error_by_component": [
+            0.00028093505158111043,
+            8.697492783399374e-05,
+            7.769121847800431e-07
+          ],
+          "sampled_PL_error": 0.0003152057104394146,
+          "sampled_exact_interpolation_error": 3.508146179470595e-05,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.4710404853104504,
+          "scaled_nodal_error_N_actual_to_1_5": 25.98040380933452
+        }
+      ]
+    },
+    {
+      "name": "separated_reversed",
+      "masses_exact": [
+        "1/100",
+        "1/100000000",
+        "1"
+      ],
+      "reference": {
+        "eigenvalues": [
+          2.1416405927771085,
+          331.97331794365056,
+          930000269.7850415
+        ],
+        "spectral_eigenpair_absolute_residual": 3.5762786865234375e-07,
+        "reference_evaluation": "scipy erfcx float64; closed alpha=1/2 formula, not interval arithmetic"
+      },
+      "runs": [
+        {
+          "m": 16,
+          "N": 64,
+          "K": 61,
+          "minimum_step": 1.97446606831969e-21,
+          "max_normalized_full_residual": 5.502303330887814e-16,
+          "max_normalized_full_residual_by_component": [
+            1.785604678683037e-16,
+            5.502303330887814e-16,
+            1.5740474543798737e-16
+          ],
+          "max_absolute_full_residual": 3.342950106177689e-07,
+          "newton_updates": 61,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 61,
+          "history_scalar_weighted_vector_terms_including_residual_check": 3721,
+          "expected_history_terms_K_squared": 3721,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.045183235524498766,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.3800595429959235
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            2
+          ],
+          "nodal_error": 0.03451776296849679,
+          "nodal_error_by_component": [
+            0.015232616639841101,
+            0.03451776296849679,
+            0.0002004198089297915
+          ],
+          "sampled_PL_error": 0.06494632710147076,
+          "sampled_exact_interpolation_error": 0.032173026409597585,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "B3": 64,
+          "N_actual": 61,
+          "scaled_nodal_error_N_actual_to_1_5": 16.44513316930121
+        },
+        {
+          "m": 32,
+          "N": 128,
+          "K": 125,
+          "minimum_step": 1.082365428948416e-22,
+          "max_normalized_full_residual": 5.061584201238687e-16,
+          "max_normalized_full_residual_by_component": [
+            2.564611240059282e-16,
+            5.061584201238687e-16,
+            3.1642871157850917e-16
+          ],
+          "max_absolute_full_residual": 1.2871031279115819e-06,
+          "newton_updates": 125,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 125,
+          "history_scalar_weighted_vector_terms_including_residual_check": 15625,
+          "expected_history_terms_K_squared": 15625,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04518432911785222,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.3800393460256605
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            2
+          ],
+          "nodal_error": 0.014520741536433415,
+          "nodal_error_by_component": [
+            0.006030963965202751,
+            0.014520741536433415,
+            7.162188404527536e-05
+          ],
+          "sampled_PL_error": 0.02296979443071595,
+          "sampled_exact_interpolation_error": 0.00868379597217022,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.249223839294258,
+          "B3": 128,
+          "N_actual": 125,
+          "scaled_nodal_error_N_actual_to_1_5": 20.29335322448116
+        },
+        {
+          "m": 64,
+          "N": 256,
+          "K": 253,
+          "minimum_step": 6.345434067744378e-24,
+          "max_normalized_full_residual": 6.772065638138192e-16,
+          "max_normalized_full_residual_by_component": [
+            3.6305177357947197e-16,
+            6.772065638138192e-16,
+            3.8636287593783897e-16
+          ],
+          "max_absolute_full_residual": 5.260969695941586e-06,
+          "newton_updates": 253,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 253,
+          "history_scalar_weighted_vector_terms_including_residual_check": 64009,
+          "expected_history_terms_K_squared": 64009,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04518469612204298,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.3800278389863375
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            2
+          ],
+          "nodal_error": 0.005570349773083488,
+          "nodal_error_by_component": [
+            0.0023271863342555488,
+            0.005570349773083488,
+            2.377595375815944e-05
+          ],
+          "sampled_PL_error": 0.007763817270377921,
+          "sampled_exact_interpolation_error": 0.002218061551126492,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.3822753047449259,
+          "B3": 256,
+          "N_actual": 253,
+          "scaled_nodal_error_N_actual_to_1_5": 22.416264787601175
+        },
+        {
+          "m": 128,
+          "N": 512,
+          "K": 509,
+          "minimum_step": 3.8424660531609084e-25,
+          "max_normalized_full_residual": 8.11291784361602e-16,
+          "max_normalized_full_residual_by_component": [
+            4.216704113946282e-16,
+            8.11291784361602e-16,
+            6.034535374936669e-16
+          ],
+          "max_absolute_full_residual": 2.0446930163398047e-05,
+          "newton_updates": 509,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 509,
+          "history_scalar_weighted_vector_terms_including_residual_check": 259081,
+          "expected_history_terms_K_squared": 259081,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04518481694455559,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.38002129054686873
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            2
+          ],
+          "nodal_error": 0.0020605497253933514,
+          "nodal_error_by_component": [
+            0.0008287161912676755,
+            0.0020605497253933514,
+            8.717771536437269e-06
+          ],
+          "sampled_PL_error": 0.0026121136732774053,
+          "sampled_exact_interpolation_error": 0.000557772609810353,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.4347386407334188,
+          "B3": 512,
+          "N_actual": 509,
+          "scaled_nodal_error_N_actual_to_1_5": 23.662453467662996
+        },
+        {
+          "m": 256,
+          "B3": 1024,
+          "N_actual": 1021,
+          "max_normalized_full_residual": 1.862770031400933e-15,
+          "max_normalized_full_residual_by_component": [
+            1.862770031400933e-15,
+            8.882635646001261e-16,
+            9.686445873106916e-16
+          ],
+          "max_absolute_full_residual": 1.2673572692356583e-05,
+          "newton_updates": 1021,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 1021,
+          "history_scalar_weighted_vector_terms_including_residual_check": 1042441,
+          "expected_history_terms_K_squared": 1042441,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.04518485913711806,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.38002083803390563
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            2
+          ],
+          "nodal_error": 0.0007509171532888853,
+          "nodal_error_by_component": [
+            0.00030624973548520895,
+            0.0007509171532888853,
+            3.0830141588000792e-06
+          ],
+          "sampled_PL_error": 0.0008891469624916354,
+          "sampled_exact_interpolation_error": 0.0001396428100284841,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.4563036264114089,
+          "scaled_nodal_error_N_actual_to_1_5": 24.498000445903696
+        },
+        {
+          "m": 512,
+          "B3": 2048,
+          "N_actual": 2045,
+          "max_normalized_full_residual": 4.988052427473041e-15,
+          "max_normalized_full_residual_by_component": [
+            4.988052427473041e-15,
+            8.616457251542517e-16,
+            1.9888276261861356e-15
+          ],
+          "max_absolute_full_residual": 0.00019063145746395227,
+          "newton_updates": 2045,
+          "max_newton_updates_per_step": 1,
+          "line_search_residual_evaluations": 2045,
+          "history_scalar_weighted_vector_terms_including_residual_check": 4182025,
+          "expected_history_terms_K_squared": 4182025,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              0.045184874505280276,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.380019769635475
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            0,
+            2
+          ],
+          "nodal_error": 0.00027118431784339814,
+          "nodal_error_by_component": [
+            0.00010900028909066606,
+            0.00027118431784339814,
+            1.0445814405679599e-06
+          ],
+          "sampled_PL_error": 0.0003057143515874383,
+          "sampled_exact_interpolation_error": 3.492256767498314e-05,
+          "continuous_sampling": "Every knot plus 1/4,1/2,3/4 of every exact rational interval; not certified supremum",
+          "observed_nodal_order": 1.469379995643267,
+          "scaled_nodal_error_N_actual_to_1_5": 25.07867225779857
+        }
+      ]
+    }
+  ],
+  "nonlinear": [
+    {
+      "name": "equal_fast",
+      "masses_exact": [
+        "1/10000",
+        "1/10000",
+        "1"
+      ],
+      "phi": "5*s+0.2*s*abs(s)**1.5",
+      "phi_second_derivative": "0.75*sign(s)*abs(s)**0.5; continuous, not Lipschitz at zero",
+      "load": "[.3+.2*sin(t), .6+.15*cos(2*t), .2+.1*sin(3*t)]",
+      "initial": [
+        1.0,
+        -0.4,
+        0.2
+      ],
+      "runs": [
+        {
+          "m": 16,
+          "N": 64,
+          "K": 46,
+          "max_normalized_full_residual": 7.458729905716567e-13,
+          "max_normalized_full_residual_by_component": [
+            7.458729905716567e-13,
+            6.94504448864681e-13,
+            1.779368155513666e-15
+          ],
+          "max_absolute_full_residual": 1.8100898557804612e-10,
+          "newton_updates": 100,
+          "max_newton_updates_per_step": 3,
+          "line_search_residual_evaluations": 100,
+          "history_scalar_weighted_vector_terms_including_residual_check": 2116,
+          "expected_history_terms_K_squared": 2116,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.004606157058780647,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.07970317110044003
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ],
+          "B3": 64,
+          "N_actual": 46
+        },
+        {
+          "m": 32,
+          "N": 128,
+          "K": 94,
+          "max_normalized_full_residual": 6.858049734279597e-13,
+          "max_normalized_full_residual_by_component": [
+            6.858049734279597e-13,
+            6.531692088491501e-13,
+            5.412878686547369e-16
+          ],
+          "max_absolute_full_residual": 1.1065798277698491e-10,
+          "newton_updates": 202,
+          "max_newton_updates_per_step": 3,
+          "line_search_residual_evaluations": 202,
+          "history_scalar_weighted_vector_terms_including_residual_check": 8836,
+          "expected_history_terms_K_squared": 8836,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.00468195473868438,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.0797137318513495
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ],
+          "B3": 128,
+          "N_actual": 94
+        },
+        {
+          "m": 64,
+          "N": 256,
+          "K": 190,
+          "max_normalized_full_residual": 7.439068761426189e-13,
+          "max_normalized_full_residual_by_component": [
+            6.729342198108623e-13,
+            7.439068761426189e-13,
+            8.174408382444817e-16
+          ],
+          "max_absolute_full_residual": 4.3856920872720195e-10,
+          "newton_updates": 402,
+          "max_newton_updates_per_step": 3,
+          "line_search_residual_evaluations": 402,
+          "history_scalar_weighted_vector_terms_including_residual_check": 36100,
+          "expected_history_terms_K_squared": 36100,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.004709418183691361,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.07971039039050443
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ],
+          "B3": 256,
+          "N_actual": 190
+        },
+        {
+          "m": 128,
+          "N": 512,
+          "K": 382,
+          "max_normalized_full_residual": 9.583010848025904e-13,
+          "max_normalized_full_residual_by_component": [
+            9.583010848025904e-13,
+            9.534988231725596e-13,
+            8.775314558167794e-14
+          ],
+          "max_absolute_full_residual": 9.406393997046791e-10,
+          "newton_updates": 787,
+          "max_newton_updates_per_step": 3,
+          "line_search_residual_evaluations": 787,
+          "history_scalar_weighted_vector_terms_including_residual_check": 145924,
+          "expected_history_terms_K_squared": 145924,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.004717721076527348,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.07970761253063796
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ],
+          "B3": 512,
+          "N_actual": 382
+        },
+        {
+          "m": 256,
+          "B3": 1024,
+          "N_actual": 766,
+          "max_normalized_full_residual": 9.162111742225272e-13,
+          "max_normalized_full_residual_by_component": [
+            9.162111742225272e-13,
+            6.974640163193627e-13,
+            3.197470255770199e-13
+          ],
+          "max_absolute_full_residual": 3.871721432346931e-08,
+          "newton_updates": 1527,
+          "max_newton_updates_per_step": 2,
+          "line_search_residual_evaluations": 1527,
+          "history_scalar_weighted_vector_terms_including_residual_check": 586756,
+          "expected_history_terms_K_squared": 586756,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.004719918853810401,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.07970760628459256
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ]
+        },
+        {
+          "m": 512,
+          "B3": 2048,
+          "N_actual": 1534,
+          "max_normalized_full_residual": 9.790412757958568e-13,
+          "max_normalized_full_residual_by_component": [
+            9.429237675352402e-13,
+            9.790412757958568e-13,
+            8.506801778297378e-13
+          ],
+          "max_absolute_full_residual": 2.770369711413423e-08,
+          "newton_updates": 3025,
+          "max_newton_updates_per_step": 2,
+          "line_search_residual_evaluations": 3025,
+          "history_scalar_weighted_vector_terms_including_residual_check": 2353156,
+          "expected_history_terms_K_squared": 2353156,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.0047214269846017065,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.0797073037841872
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "nodal_difference": 0.018546097810775992,
+          "nodal_difference_by_component": [
+            0.01395033075310903,
+            0.018546097810775992,
+            0.0009221561499621611
+          ],
+          "PL_difference": 0.05028545051184968,
+          "PL_difference_by_component": [
+            0.035896973003194166,
+            0.05028545051184968,
+            0.0016600850240358067
+          ],
+          "meaning": "Nested refinement differences, not errors against an exact nonlinear solution",
+          "coarse_m": 16,
+          "fine_m": 32
+        },
+        {
+          "nodal_difference": 0.008616147408013405,
+          "nodal_difference_by_component": [
+            0.006294855864143134,
+            0.008616147408013405,
+            0.00037322390654004334
+          ],
+          "PL_difference": 0.017576010575797163,
+          "PL_difference_by_component": [
+            0.012593247669917096,
+            0.017576010575797163,
+            0.0005700069890052228
+          ],
+          "meaning": "Nested refinement differences, not errors against an exact nonlinear solution",
+          "coarse_m": 32,
+          "fine_m": 64,
+          "observed_PL_self_order": 1.5165333910420615
+        },
+        {
+          "nodal_difference": 0.003451547669231142,
+          "nodal_difference_by_component": [
+            0.0024938750728127346,
+            0.003451547669231142,
+            0.00011589059260555534
+          ],
+          "PL_difference": 0.00578207347694204,
+          "PL_difference_by_component": [
+            0.004144872787833043,
+            0.00578207347694204,
+            0.00016053053517151028
+          ],
+          "meaning": "Nested refinement differences, not errors against an exact nonlinear solution",
+          "coarse_m": 64,
+          "fine_m": 128,
+          "observed_PL_self_order": 1.603948795567725
+        },
+        {
+          "nodal_difference": 0.001300027000747217,
+          "nodal_difference_by_component": [
+            0.0009371651941090242,
+            0.001300027000747217,
+            4.449108367521326e-05
+          ],
+          "PL_difference": 0.0018886493543089078,
+          "PL_difference_by_component": [
+            0.0013752921793284134,
+            0.0018886493543089078,
+            5.628522541012426e-05
+          ],
+          "meaning": "Nested refinement differences, not errors against an exact nonlinear solution",
+          "coarse_m": 128,
+          "fine_m": 256,
+          "observed_PL_self_order": 1.6142320657383662
+        },
+        {
+          "nodal_difference": 0.0004782058774274456,
+          "nodal_difference_by_component": [
+            0.0003441712124601093,
+            0.0004782058774274456,
+            1.6201745690114233e-05
+          ],
+          "PL_difference": 0.0006259940970889388,
+          "PL_difference_by_component": [
+            0.000448233015409083,
+            0.0006259940970889388,
+            1.8970412804686365e-05
+          ],
+          "meaning": "Nested refinement differences, not errors against an exact nonlinear solution",
+          "coarse_m": 256,
+          "fine_m": 512,
+          "observed_PL_self_order": 1.5931339183385844
+        }
+      ]
+    },
+    {
+      "name": "separated",
+      "masses_exact": [
+        "1/100000000",
+        "1/100",
+        "1"
+      ],
+      "phi": "5*s+0.2*s*abs(s)**1.5",
+      "phi_second_derivative": "0.75*sign(s)*abs(s)**0.5; continuous, not Lipschitz at zero",
+      "load": "[.3+.2*sin(t), .6+.15*cos(2*t), .2+.1*sin(3*t)]",
+      "initial": [
+        1.0,
+        -0.4,
+        0.2
+      ],
+      "runs": [
+        {
+          "m": 16,
+          "N": 64,
+          "K": 61,
+          "max_normalized_full_residual": 8.831085994230225e-13,
+          "max_normalized_full_residual_by_component": [
+            2.4102922282602687e-13,
+            8.831085994230225e-13,
+            2.5653109328722774e-14
+          ],
+          "max_absolute_full_residual": 1.6251333539996082e-07,
+          "newton_updates": 140,
+          "max_newton_updates_per_step": 3,
+          "line_search_residual_evaluations": 140,
+          "history_scalar_weighted_vector_terms_including_residual_check": 3721,
+          "expected_history_terms_K_squared": 3721,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.004082023004244872,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.06515146952536063
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ],
+          "B3": 64,
+          "N_actual": 61
+        },
+        {
+          "m": 32,
+          "N": 128,
+          "K": 125,
+          "max_normalized_full_residual": 7.387769398316649e-13,
+          "max_normalized_full_residual_by_component": [
+            7.387769398316649e-13,
+            5.921116015352007e-13,
+            7.339758983710924e-15
+          ],
+          "max_absolute_full_residual": 1.1050160459435965e-06,
+          "newton_updates": 276,
+          "max_newton_updates_per_step": 3,
+          "line_search_residual_evaluations": 276,
+          "history_scalar_weighted_vector_terms_including_residual_check": 15625,
+          "expected_history_terms_K_squared": 15625,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.004133516764138034,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.06500723284308252
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ],
+          "B3": 128,
+          "N_actual": 125
+        },
+        {
+          "m": 64,
+          "N": 256,
+          "K": 253,
+          "max_normalized_full_residual": 9.588302652927924e-13,
+          "max_normalized_full_residual_by_component": [
+            8.135608491747169e-13,
+            9.588302652927924e-13,
+            5.31084989119568e-13
+          ],
+          "max_absolute_full_residual": 2.0172291372300144e-06,
+          "newton_updates": 534,
+          "max_newton_updates_per_step": 3,
+          "line_search_residual_evaluations": 534,
+          "history_scalar_weighted_vector_terms_including_residual_check": 64009,
+          "expected_history_terms_K_squared": 64009,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.004158709741917843,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.06500789771071713
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ],
+          "B3": 256,
+          "N_actual": 253
+        },
+        {
+          "m": 128,
+          "N": 512,
+          "K": 509,
+          "max_normalized_full_residual": 9.7632921833171e-13,
+          "max_normalized_full_residual_by_component": [
+            9.7632921833171e-13,
+            7.912645857940718e-13,
+            5.181212036747311e-13
+          ],
+          "max_absolute_full_residual": 1.8580561529091266e-05,
+          "newton_updates": 1044,
+          "max_newton_updates_per_step": 3,
+          "line_search_residual_evaluations": 1044,
+          "history_scalar_weighted_vector_terms_including_residual_check": 259081,
+          "expected_history_terms_K_squared": 259081,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.004166513861904475,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.06499424655120761
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ],
+          "B3": 512,
+          "N_actual": 509
+        },
+        {
+          "m": 256,
+          "B3": 1024,
+          "N_actual": 1021,
+          "max_normalized_full_residual": 9.149903001634698e-13,
+          "max_normalized_full_residual_by_component": [
+            9.149903001634698e-13,
+            7.836391641513406e-13,
+            5.132454436622924e-13
+          ],
+          "max_absolute_full_residual": 4.678925344886453e-05,
+          "newton_updates": 2034,
+          "max_newton_updates_per_step": 2,
+          "line_search_residual_evaluations": 2034,
+          "history_scalar_weighted_vector_terms_including_residual_check": 1042441,
+          "expected_history_terms_K_squared": 1042441,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.004168552605681108,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.06498797409411022
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ]
+        },
+        {
+          "m": 512,
+          "B3": 2048,
+          "N_actual": 2045,
+          "max_normalized_full_residual": 9.388045129816481e-13,
+          "max_normalized_full_residual_by_component": [
+            9.388045129816481e-13,
+            8.960072173211452e-13,
+            8.147595862639202e-13
+          ],
+          "max_absolute_full_residual": 0.0003070275078084772,
+          "newton_updates": 4037,
+          "max_newton_updates_per_step": 2,
+          "line_search_residual_evaluations": 4037,
+          "history_scalar_weighted_vector_terms_including_residual_check": 4182025,
+          "expected_history_terms_K_squared": 4182025,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.004169530785475328,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.06498548406678342
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "nodal_difference": 0.022970872600399872,
+          "nodal_difference_by_component": [
+            0.022970872600399872,
+            0.011857073540389076,
+            0.0008543871813438408
+          ],
+          "PL_difference": 0.055768898091837604,
+          "PL_difference_by_component": [
+            0.055768898091837604,
+            0.02745286855622789,
+            0.001560995804237686
+          ],
+          "meaning": "Nested refinement differences, not errors against an exact nonlinear solution",
+          "coarse_m": 16,
+          "fine_m": 32
+        },
+        {
+          "nodal_difference": 0.009712413613252036,
+          "nodal_difference_by_component": [
+            0.009712413613252036,
+            0.005253929024630261,
+            0.0003156292083049128
+          ],
+          "PL_difference": 0.018618562675516037,
+          "PL_difference_by_component": [
+            0.018618562675516037,
+            0.009220796312142815,
+            0.0004997635950487189
+          ],
+          "meaning": "Nested refinement differences, not errors against an exact nonlinear solution",
+          "coarse_m": 32,
+          "fine_m": 64,
+          "observed_PL_self_order": 1.5827190624609766
+        },
+        {
+          "nodal_difference": 0.003734301374353155,
+          "nodal_difference_by_component": [
+            0.003734301374353155,
+            0.0017733171544555004,
+            0.00010242565569634765
+          ],
+          "PL_difference": 0.005988207511625432,
+          "PL_difference_by_component": [
+            0.005988207511625432,
+            0.0027944040725842445,
+            0.00014826709091642076
+          ],
+          "meaning": "Nested refinement differences, not errors against an exact nonlinear solution",
+          "coarse_m": 64,
+          "fine_m": 128,
+          "observed_PL_self_order": 1.636545581717384
+        },
+        {
+          "nodal_difference": 0.0013876679079652954,
+          "nodal_difference_by_component": [
+            0.0013876679079652954,
+            0.0006276402848674895,
+            3.807976180009165e-05
+          ],
+          "PL_difference": 0.0019509680062158585,
+          "PL_difference_by_component": [
+            0.0019509680062158585,
+            0.0008940549122505304,
+            5.050807282441783e-05
+          ],
+          "meaning": "Nested refinement differences, not errors against an exact nonlinear solution",
+          "coarse_m": 128,
+          "fine_m": 256,
+          "observed_PL_self_order": 1.61793409703224
+        },
+        {
+          "nodal_difference": 0.0005068743543745757,
+          "nodal_difference_by_component": [
+            0.0005068743543745757,
+            0.00023041259064870978,
+            1.430907521887681e-05
+          ],
+          "PL_difference": 0.0006476007091859026,
+          "PL_difference_by_component": [
+            0.0006476007091859026,
+            0.00029365919704416044,
+            1.6687271298998496e-05
+          ],
+          "meaning": "Nested refinement differences, not errors against an exact nonlinear solution",
+          "coarse_m": 256,
+          "fine_m": 512,
+          "observed_PL_self_order": 1.5910136488429383
+        }
+      ]
+    },
+    {
+      "name": "separated_reversed",
+      "masses_exact": [
+        "1/100",
+        "1/100000000",
+        "1"
+      ],
+      "phi": "5*s+0.2*s*abs(s)**1.5",
+      "phi_second_derivative": "0.75*sign(s)*abs(s)**0.5; continuous, not Lipschitz at zero",
+      "load": "[.3+.2*sin(t), .6+.15*cos(2*t), .2+.1*sin(3*t)]",
+      "initial": [
+        1.0,
+        -0.4,
+        0.2
+      ],
+      "runs": [
+        {
+          "m": 16,
+          "N": 64,
+          "K": 61,
+          "max_normalized_full_residual": 8.277210989206328e-13,
+          "max_normalized_full_residual_by_component": [
+            8.277210989206328e-13,
+            7.539069292783799e-13,
+            3.9349612627355776e-14
+          ],
+          "max_absolute_full_residual": 1.5989847818032032e-07,
+          "newton_updates": 136,
+          "max_newton_updates_per_step": 3,
+          "line_search_residual_evaluations": 136,
+          "history_scalar_weighted_vector_terms_including_residual_check": 3721,
+          "expected_history_terms_K_squared": 3721,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.0034493610945000586,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.396917181898956
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ],
+          "B3": 64,
+          "N_actual": 61
+        },
+        {
+          "m": 32,
+          "N": 128,
+          "K": 125,
+          "max_normalized_full_residual": 8.104161981871056e-13,
+          "max_normalized_full_residual_by_component": [
+            8.104161981871056e-13,
+            7.811695122898001e-13,
+            5.55190578865194e-15
+          ],
+          "max_absolute_full_residual": 6.09921917693601e-07,
+          "newton_updates": 270,
+          "max_newton_updates_per_step": 3,
+          "line_search_residual_evaluations": 270,
+          "history_scalar_weighted_vector_terms_including_residual_check": 15625,
+          "expected_history_terms_K_squared": 15625,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.0035662600299073977,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.3969001997401468
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ],
+          "B3": 128,
+          "N_actual": 125
+        },
+        {
+          "m": 64,
+          "N": 256,
+          "K": 253,
+          "max_normalized_full_residual": 8.936441259341012e-13,
+          "max_normalized_full_residual_by_component": [
+            2.2016711302618417e-13,
+            8.936441259341012e-13,
+            5.857508631413801e-13
+          ],
+          "max_absolute_full_residual": 3.3449148156283748e-06,
+          "newton_updates": 519,
+          "max_newton_updates_per_step": 3,
+          "line_search_residual_evaluations": 519,
+          "history_scalar_weighted_vector_terms_including_residual_check": 64009,
+          "expected_history_terms_K_squared": 64009,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.003586545723857304,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.39689097068408763
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ],
+          "B3": 256,
+          "N_actual": 253
+        },
+        {
+          "m": 128,
+          "N": 512,
+          "K": 509,
+          "max_normalized_full_residual": 9.910900303718773e-13,
+          "max_normalized_full_residual_by_component": [
+            2.5822852736449714e-14,
+            9.910900303718773e-13,
+            5.766876857064941e-13
+          ],
+          "max_absolute_full_residual": 1.731753101824607e-05,
+          "newton_updates": 1026,
+          "max_newton_updates_per_step": 3,
+          "line_search_residual_evaluations": 1026,
+          "history_scalar_weighted_vector_terms_including_residual_check": 259081,
+          "expected_history_terms_K_squared": 259081,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.0035925655646137367,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.39688629240662
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ],
+          "B3": 512,
+          "N_actual": 509
+        },
+        {
+          "m": 256,
+          "B3": 1024,
+          "N_actual": 1021,
+          "max_normalized_full_residual": 9.875860553700793e-13,
+          "max_normalized_full_residual_by_component": [
+            9.220777736231021e-13,
+            9.875860553700793e-13,
+            5.71611159105308e-13
+          ],
+          "max_absolute_full_residual": 7.244627942376569e-05,
+          "newton_updates": 2035,
+          "max_newton_updates_per_step": 2,
+          "line_search_residual_evaluations": 2035,
+          "history_scalar_weighted_vector_terms_including_residual_check": 1042441,
+          "expected_history_terms_K_squared": 1042441,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.00359489739660096,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.3968854081169775
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ]
+        },
+        {
+          "m": 512,
+          "B3": 2048,
+          "N_actual": 2045,
+          "max_normalized_full_residual": 9.782772625617657e-13,
+          "max_normalized_full_residual_by_component": [
+            9.23236440045199e-13,
+            9.782772625617657e-13,
+            8.661562457847303e-13
+          ],
+          "max_absolute_full_residual": 9.77153486540483e-05,
+          "newton_updates": 4050,
+          "max_newton_updates_per_step": 2,
+          "line_search_residual_evaluations": 4050,
+          "history_scalar_weighted_vector_terms_including_residual_check": 4182025,
+          "expected_history_terms_K_squared": 4182025,
+          "retained_history_start": 0,
+          "max_solution_component": 1.0,
+          "edge_difference_ranges": [
+            [
+              -0.0035957980468787065,
+              1.4
+            ],
+            [
+              -0.6000000000000001,
+              0.3968849116128267
+            ]
+          ],
+          "edge_sign_changes_between_nodes": [
+            2,
+            1
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "nodal_difference": 0.022559750133534458,
+          "nodal_difference_by_component": [
+            0.009351614783147388,
+            0.022559750133534458,
+            0.0008114513976897331
+          ],
+          "PL_difference": 0.05791953613099379,
+          "PL_difference_by_component": [
+            0.020204985706427148,
+            0.05791953613099379,
+            0.0014846260653313958
+          ],
+          "meaning": "Nested refinement differences, not errors against an exact nonlinear solution",
+          "coarse_m": 16,
+          "fine_m": 32
+        },
+        {
+          "nodal_difference": 0.010038515386550054,
+          "nodal_difference_by_component": [
+            0.003760220492268762,
+            0.010038515386550054,
+            0.00029971225489561215
+          ],
+          "PL_difference": 0.020240387652649565,
+          "PL_difference_by_component": [
+            0.006983693821204562,
+            0.020240387652649565,
+            0.00047500692564655944
+          ],
+          "meaning": "Nested refinement differences, not errors against an exact nonlinear solution",
+          "coarse_m": 32,
+          "fine_m": 64,
+          "observed_PL_self_order": 1.516813126720394
+        },
+        {
+          "nodal_difference": 0.00399166377198501,
+          "nodal_difference_by_component": [
+            0.0014401558934048486,
+            0.00399166377198501,
+            9.72503209819009e-05
+          ],
+          "PL_difference": 0.006575630757521662,
+          "PL_difference_by_component": [
+            0.002225967667283446,
+            0.006575630757521662,
+            0.000140877525706129
+          ],
+          "meaning": "Nested refinement differences, not errors against an exact nonlinear solution",
+          "coarse_m": 64,
+          "fine_m": 128,
+          "observed_PL_self_order": 1.6220357269014605
+        },
+        {
+          "nodal_difference": 0.0014945289030206949,
+          "nodal_difference_by_component": [
+            0.0005187591837430006,
+            0.0014945289030206949,
+            3.614862965323207e-05
+          ],
+          "PL_difference": 0.002147052892964796,
+          "PL_difference_by_component": [
+            0.000708476691396176,
+            0.002147052892964796,
+            4.796988391314594e-05
+          ],
+          "meaning": "Nested refinement differences, not errors against an exact nonlinear solution",
+          "coarse_m": 128,
+          "fine_m": 256,
+          "observed_PL_self_order": 1.6147715567618361
+        },
+        {
+          "nodal_difference": 0.0005480881604116583,
+          "nodal_difference_by_component": [
+            0.0001858412090542938,
+            0.0005480881604116583,
+            1.3592840312881549e-05
+          ],
+          "PL_difference": 0.0007113014222413783,
+          "PL_difference_by_component": [
+            0.00023567038226002257,
+            0.0007113014222413783,
+            1.5859643980542515e-05
+          ],
+          "meaning": "Nested refinement differences, not errors against an exact nonlinear solution",
+          "coarse_m": 256,
+          "fine_m": 512,
+          "observed_PL_self_order": 1.5938247793261233
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Finite selected masses and alpha=1/2 do not prove uniformity over all parameters.",
+    "erfcx spectral references are evaluated in float64, without interval error bounds.",
+    "Residuals use the stated rounded L1 weights and floating arithmetic; they are not certified bounds for the exact mathematical operator.",
+    "Sampled continuous linear errors are not certified suprema.",
+    "Nonlinear refinement differences are not rigorous upper error bounds.",
+    "No performance speedup comparison is performed."
+  ],
+  "elapsed_seconds": 36.29700000000048
+}

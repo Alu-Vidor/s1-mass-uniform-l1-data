@@ -1,0 +1,108 @@
+{
+  "purpose": "Extraction and arithmetic checks of saved data only; no numerical solver run",
+  "row_counts": {
+    "linear": 31,
+    "nonlinear": 15,
+    "manufactured_L1": 5
+  },
+  "source_sha256_matches": true,
+  "manufactured_archived_source_provenance_matches": true,
+  "manufactured_current_sources_match_archive_checksums": true,
+  "manufactured_all_saved_result_sha256_matches": true,
+  "all_linear_errors_decrease": true,
+  "all_nonlinear_PL_differences_decrease": true,
+  "all_manufactured_L1_errors_below_computed_budget": true,
+  "arithmetic_certified": false,
+  "manufactured_case": {
+    "alpha": 0.5,
+    "T": 1.0,
+    "beta": 0.6,
+    "masses": [
+      0.02,
+      0.002,
+      0.0002,
+      1.0,
+      1.0
+    ],
+    "a": [
+      0.8,
+      -0.5,
+      0.6,
+      0.1,
+      0.2
+    ],
+    "b": [
+      0.8,
+      -0.6,
+      0.45,
+      0.7,
+      -0.5
+    ],
+    "losses": [
+      0.5,
+      0.5,
+      0.5,
+      1.5,
+      1.5
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "edges": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "conductances": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.7,
+      0.5
+    ],
+    "exact_solution": "u*(t)=a+b*t^3",
+    "exact_Caputo": "Gamma(4)/Gamma(4-alpha)*b*t^(3-alpha)",
+    "forcing": "M*D_C^alpha u* + componentwise edge sum at u*",
+    "prepared_initial_data": true,
+    "public_entry_scope": "Callable low-level full kernels; Model is unmodified"
+  },
+  "inputs": {
+    "legacy/mass3/extended_mass3.json": "79eff52035af4bbe059211ff4601a129f644e01e865dad7eec63b7d5f8570721",
+    "legacy/mass3/checks.json": "18ca6861dd1a45ff204f81ea780fec7fd701953d4d52db772da9b68ddb4825bf",
+    "legacy/manufactured/results/manufactured_nonlinear/ACCURACY.csv": "0653e5cdeac5e0781a69a8d3179b292f311224232fef2e7d1ca10b1bb0ed979c",
+    "legacy/manufactured/results/manufactured_nonlinear/CONVERGENCE.csv": "54949df8b390b91b258cc0559cc748f2268490f960a37f5cb4b60cfd78f3c8e8",
+    "legacy/manufactured/results/manufactured_nonlinear/SUMMARY.json": "8f48ad6c6aef0fb036b7b76316164fbf18a3e19cbdf23e5eeb7c38016c7a7910",
+    "legacy/mass3/mass3_l1_check.py": "c69d89ebe2c7608647fff16f146d57fd7c2150c75102ce22eca1686b301fb929"
+  },
+  "outputs": {
+    "linear_mass3.csv": "35b8a755254de111b36e6f9ccd0cc9cc6919aaa9e0375fdf41df89ee22759052",
+    "nonlinear_mass3.csv": "20515c64bc2b83d28dde50aa9173a668ef48e6a1ae4ee1a9f9990098b120b522",
+    "manufactured_L1.csv": "9d93392bf119530ce9ecc19d63dee1c1fa00605489beb8d4547fce4682bd314a"
+  }
+}

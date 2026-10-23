@@ -1,0 +1,9 @@
+{
+  "legacy/manufactured/run_manufactured.py": {
+    "archived_public_sha256": "774c98babd6f68cdb69fa2f1fb77b16969447f0f983a5fa22762b038a69586c4",
+    "changes": [
+      "Use a date-free default output directory.",
+      "Omit calendar timestamps from generated metadata."
+    ]
+  }
+}

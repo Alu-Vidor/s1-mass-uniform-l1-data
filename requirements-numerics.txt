@@ -1,0 +1,4 @@
+# Python 3.12.14 was used for the archived numerical calculations.
+numpy==2.3.5
+scipy==1.17.0
+mpmath==1.3.0

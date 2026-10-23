@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "reviewer": "Separate reference-design audit",
+  "results_sha256": "58f82bd99238fd2e6ad235fdcb0a865c99bf5ffe37b64f2521746206fc2aeab6",
+  "initial_load_minus_F_u0": [
+    -9.9875,
+    13.855900000000002,
+    -4.4484
+  ],
+  "initial_edge_potentials": [
+    1.5,
+    -1.2
+  ],
+  "initial_nonlinear_edge_currents": [
+    9.1875,
+    -4.1184
+  ],
+  "initial_edge_incremental_conductances": [
+    8.375,
+    4.295999999999999
+  ],
+  "theorem_class": "Fixed linear positive node losses and globally monotone C-infinity cubic edge laws; constant forcing; same unprepared u0 for all masses",
+  "family_checks": [
+    {
+      "alpha": 0.3,
+      "delta": "1",
+      "all_saved_nodal_errors_recomputed": true,
+      "all_rates_recomputed": true,
+      "sampled_PL_error_recomputed": true,
+      "all_five_levels_strictly_decrease": true,
+      "reference_successive_discrepancies": [
+        6.833274512896281e-08,
+        1.6342986908224333e-08
+      ],
+      "final_reference_increment_percent_of_finest_L1_error": 0.018683620301889255
+    },
+    {
+      "alpha": 0.3,
+      "delta": "1/100",
+      "all_saved_nodal_errors_recomputed": true,
+      "all_rates_recomputed": true,
+      "sampled_PL_error_recomputed": true,
+      "all_five_levels_strictly_decrease": true,
+      "reference_successive_discrepancies": [
+        7.50251941683544e-07,
+        1.7614813246913386e-07
+      ],
+      "final_reference_increment_percent_of_finest_L1_error": 0.12180750355616125
+    },
+    {
+      "alpha": 0.7,
+      "delta": "1",
+      "all_saved_nodal_errors_recomputed": true,
+      "all_rates_recomputed": true,
+      "sampled_PL_error_recomputed": true,
+      "all_five_levels_strictly_decrease": true,
+      "reference_successive_discrepancies": [
+        3.624603750473909e-08,
+        9.03610075653205e-09
+      ],
+      "final_reference_increment_percent_of_finest_L1_error": 0.002207761055346267
+    },
+    {
+      "alpha": 0.7,
+      "delta": "1/100",
+      "all_saved_nodal_errors_recomputed": true,
+      "all_rates_recomputed": true,
+      "sampled_PL_error_recomputed": true,
+      "all_five_levels_strictly_decrease": true,
+      "reference_successive_discrepancies": [
+        3.6560274657704284e-07,
+        9.081815233180635e-08
+      ],
+      "final_reference_increment_percent_of_finest_L1_error": 0.015698134714928494
+    }
+  ],
+  "largest_stored_normalized_L1_residual": 4.981729662732495e-13,
+  "selected_85_digit_history_recomputation_maximum": 4.963137066683104e-13,
+  "selected_85_digit_discrepancy_from_stored": 4.923627611114479e-16,
+  "maximum_100_digit_weight_relative_difference": 9.034626376194357e-15,
+  "maximum_cross_grade_difference": 7.493391873669708e-08,
+  "limitations": [
+    "Reference discretises a different integral-equation formulation, rather than a fine L1 grid.",
+    "Finite refinements and sampled errors are numerical evidence, not interval-certified global error bounds.",
+    "Non-half orders and polynomial nonlinear coupling are now combined; no real-device calibration is claimed.",
+    "Alpha=0.3 rates at the available final levels do not all attain the asymptotic exponent 1.7."
+  ]
+}

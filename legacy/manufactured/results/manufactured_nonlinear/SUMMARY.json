@@ -1,0 +1,560 @@
+{
+  "protocol": {
+    "case": {
+      "alpha": 0.5,
+      "T": 1.0,
+      "beta": 0.6,
+      "masses": [
+        0.02,
+        0.002,
+        0.0002,
+        1.0,
+        1.0
+      ],
+      "a": [
+        0.8,
+        -0.5,
+        0.6,
+        0.1,
+        0.2
+      ],
+      "b": [
+        0.8,
+        -0.6,
+        0.45,
+        0.7,
+        -0.5
+      ],
+      "losses": [
+        0.5,
+        0.5,
+        0.5,
+        1.5,
+        1.5
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "edges": [
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "conductances": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.7,
+        0.5
+      ],
+      "exact_solution": "u*(t)=a+b*t^3",
+      "exact_Caputo": "Gamma(4)/Gamma(4-alpha)*b*t^(3-alpha)",
+      "forcing": "M*D_C^alpha u* + componentwise edge sum at u*",
+      "prepared_initial_data": true,
+      "public_entry_scope": "Callable low-level full kernels; Model is unmodified"
+    },
+    "levels": [
+      20,
+      40,
+      80,
+      160,
+      320
+    ],
+    "mesh": "uniform np.linspace(0,T,n+1)",
+    "primary_tol": 1e-12,
+    "finest_control_tol": 1e-13,
+    "methods": {
+      "L1": "graph_full.l1_solve callable fixture"
+    },
+    "E_node": "max over all five coordinates and all stored time nodes",
+    "E_linearinterp": "continuous maximum of linear interpolation of stored states minus cubic",
+    "G17_budget": "max exact full substitution/(losses+mass*oldest L1 weight)",
+    "arithmetic_certified": false,
+    "physical_error_certified": false,
+    "performance_experiment": false,
+    "source_sha256": {
+      "run_manufactured.py": "74002c2fa7793e78068984fc714abf7745951f5c312b13110d0b8c40af1e1db8",
+      "graph_full.py": "47f84ce2008ca6e4a134152a8f2b8bbd79af27baed4c1e76ec1d11e6140cd04c",
+      "serial_pl/finite_block.py": "5766746a4ef52b5dcb575fbda1af7ca4a6a30ce294fa9877cdf1648543bc2cdd"
+    }
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "python",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "argv": [
+      "legacy/manufactured/run_manufactured.py"
+    ],
+    "independent_force_identity_error": 8.881784197001252e-16
+  },
+  "convergence": [
+    {
+      "n": 20,
+      "E_node_L1": 0.002721644685243385,
+      "p_L1": null
+    },
+    {
+      "n": 40,
+      "E_node_L1": 0.0009959030150142878,
+      "p_L1": 1.4504015742733571
+    },
+    {
+      "n": 80,
+      "E_node_L1": 0.00036027170794616925,
+      "p_L1": 1.4669198920632256
+    },
+    {
+      "n": 160,
+      "E_node_L1": 0.00012937113157540647,
+      "p_L1": 1.477569637570041
+    },
+    {
+      "n": 320,
+      "E_node_L1": 4.623022221439399e-05,
+      "p_L1": 1.4846075218428567
+    }
+  ],
+  "diagnostics": [
+    {
+      "method": "L1",
+      "n": 20,
+      "nodes": 21,
+      "algebraic_tol": 1e-12,
+      "E_node": 0.002721644685243385,
+      "E_linearinterp": 0.003917116661891873,
+      "solver_actual_state_residual": 4.889141843127706e-13,
+      "solver_residuals": {
+        "max_normalized_full_residual": 4.889141843127706e-13,
+        "max_normalized_full_residual_by_component": [
+          2.1616970509518946e-13,
+          4.889141843127706e-13,
+          3.568188053340845e-13,
+          6.61721886724727e-15,
+          8.852765781857834e-15
+        ],
+        "max_absolute_full_residual": 2.460254222569347e-13,
+        "requested_algebraic_tolerance": 1e-12,
+        "arithmetic_is_interval_certified": false
+      },
+      "solver_counters": {
+        "method": "GRAPH-FULL L1",
+        "n": 20,
+        "dimension": 5,
+        "history_weights": 210,
+        "history_scalar_madds": 9290,
+        "history_fraction_subtractions": 0,
+        "history_state_updates": 0,
+        "history_integer_subtractions": 0,
+        "force_evaluations": 20,
+        "F_evaluations": 154,
+        "jacobian_evaluations": 57,
+        "nonlinear_iterations": 57,
+        "linear_solves": 57,
+        "matrix_factorizations": 57,
+        "linear_flops_est": 5225.000000000001,
+        "line_search_evaluations": 57,
+        "residual_checks": 154,
+        "output_nodes": 21,
+        "output_scalar_values": 105,
+        "history_start": 0.0,
+        "arithmetic": "float64; supplied uniform float grid",
+        "machine_epsilon": 2.220446049250313e-16,
+        "solve_seconds": 0.007117600000128732,
+        "seconds": 0.007117600000128732,
+        "output_storage_bytes": 1008,
+        "peak_array_storage_bytes_est": 3088,
+        "peak_storage_bytes_est": 3088
+      },
+      "pure_derivative_force_defect_max": 0.009960195800170046,
+      "exact_substitution_raw_max": 0.009960195800170046,
+      "G17_consistency_budget": 0.004808381061453152,
+      "independent_actual_state_residual": 4.889141843127706e-13,
+      "normalization": "losses+mass*oldest_L1_weight",
+      "consistency_units": "state after G17 normalization; raw defect has force units",
+      "exact_arithmetic_global_comparison_applicable": true,
+      "consistency_evaluation_is_interval_certified": false,
+      "G17_error_estimate": 0.0048083810619420665,
+      "G17_rounding_check_slack": 1.6325242745312724e-12,
+      "G17_comparison_check": true,
+      "G17_estimate_is_interval_certified": false,
+      "p_node": null,
+      "p_linearinterp": null,
+      "trajectory_file": "l1_n20.npz"
+    },
+    {
+      "method": "L1",
+      "n": 40,
+      "nodes": 41,
+      "algebraic_tol": 1e-12,
+      "E_node": 0.0009959030150142878,
+      "E_linearinterp": 0.0013046145510786644,
+      "solver_actual_state_residual": 7.209938518151044e-13,
+      "solver_residuals": {
+        "max_normalized_full_residual": 7.209938518151044e-13,
+        "max_normalized_full_residual_by_component": [
+          3.1571524842459886e-13,
+          7.209938518151044e-13,
+          5.264152951410224e-13,
+          1.1325309950930677e-14,
+          1.2889469891706068e-14
+        ],
+        "max_absolute_full_residual": 3.623767952376511e-13,
+        "requested_algebraic_tolerance": 1e-12,
+        "arithmetic_is_interval_certified": false
+      },
+      "solver_counters": {
+        "method": "GRAPH-FULL L1",
+        "n": 40,
+        "dimension": 5,
+        "history_weights": 820,
+        "history_scalar_madds": 36340,
+        "history_fraction_subtractions": 0,
+        "history_state_updates": 0,
+        "history_integer_subtractions": 0,
+        "force_evaluations": 40,
+        "F_evaluations": 304,
+        "jacobian_evaluations": 112,
+        "nonlinear_iterations": 112,
+        "linear_solves": 112,
+        "matrix_factorizations": 112,
+        "linear_flops_est": 10266.666666666664,
+        "line_search_evaluations": 112,
+        "residual_checks": 304,
+        "output_nodes": 41,
+        "output_scalar_values": 205,
+        "history_start": 0.0,
+        "arithmetic": "float64; supplied uniform float grid",
+        "machine_epsilon": 2.220446049250313e-16,
+        "solve_seconds": 0.011679000000185624,
+        "seconds": 0.011679000000185624,
+        "output_storage_bytes": 1968,
+        "peak_array_storage_bytes_est": 5008,
+        "peak_storage_bytes_est": 5008
+      },
+      "pure_derivative_force_defect_max": 0.0036356291227150894,
+      "exact_substitution_raw_max": 0.0036356291227150894,
+      "G17_consistency_budget": 0.0017582447486168538,
+      "independent_actual_state_residual": 7.209938518151044e-13,
+      "normalization": "losses+mass*oldest_L1_weight",
+      "consistency_units": "state after G17 normalization; raw defect has force units",
+      "exact_arithmetic_global_comparison_applicable": true,
+      "consistency_evaluation_is_interval_certified": false,
+      "G17_error_estimate": 0.0017582447493378476,
+      "G17_rounding_check_slack": 1.6325242745312724e-12,
+      "G17_comparison_check": true,
+      "G17_estimate_is_interval_certified": false,
+      "p_node": 1.4504015742733571,
+      "p_linearinterp": 1.5861684712385804,
+      "trajectory_file": "l1_n40.npz"
+    },
+    {
+      "method": "L1",
+      "n": 80,
+      "nodes": 81,
+      "algebraic_tol": 1e-12,
+      "E_node": 0.00036027170794616925,
+      "E_linearinterp": 0.0004390337728773508,
+      "solver_actual_state_residual": 7.569851798700732e-13,
+      "solver_residuals": {
+        "max_normalized_full_residual": 7.569851798700732e-13,
+        "max_normalized_full_residual_by_component": [
+          3.3023633389692067e-13,
+          7.569851798700732e-13,
+          5.637478679508612e-13,
+          1.3682738550187928e-14,
+          1.511427898627734e-14
+        ],
+        "max_absolute_full_residual": 3.801403636316536e-13,
+        "requested_algebraic_tolerance": 1e-12,
+        "arithmetic_is_interval_certified": false
+      },
+      "solver_counters": {
+        "method": "GRAPH-FULL L1",
+        "n": 80,
+        "dimension": 5,
+        "history_weights": 3240,
+        "history_scalar_madds": 142870,
+        "history_fraction_subtractions": 0,
+        "history_state_updates": 0,
+        "history_integer_subtractions": 0,
+        "force_evaluations": 80,
+        "F_evaluations": 596,
+        "jacobian_evaluations": 218,
+        "nonlinear_iterations": 218,
+        "linear_solves": 218,
+        "matrix_factorizations": 218,
+        "linear_flops_est": 19983.33333333334,
+        "line_search_evaluations": 218,
+        "residual_checks": 596,
+        "output_nodes": 81,
+        "output_scalar_values": 405,
+        "history_start": 0.0,
+        "arithmetic": "float64; supplied uniform float grid",
+        "machine_epsilon": 2.220446049250313e-16,
+        "solve_seconds": 0.029802500000187138,
+        "seconds": 0.029802500000187138,
+        "output_storage_bytes": 3888,
+        "peak_array_storage_bytes_est": 8848,
+        "peak_storage_bytes_est": 8848
+      },
+      "pure_derivative_force_defect_max": 0.0013130587573610963,
+      "exact_substitution_raw_max": 0.0013130587573610963,
+      "G17_consistency_budget": 0.0006355671714534976,
+      "independent_actual_state_residual": 7.569851798700732e-13,
+      "normalization": "losses+mass*oldest_L1_weight",
+      "consistency_units": "state after G17 normalization; raw defect has force units",
+      "exact_arithmetic_global_comparison_applicable": true,
+      "consistency_evaluation_is_interval_certified": false,
+      "G17_error_estimate": 0.0006355671722104828,
+      "G17_rounding_check_slack": 1.6325242745312724e-12,
+      "G17_comparison_check": true,
+      "G17_estimate_is_interval_certified": false,
+      "p_node": 1.4669198920632256,
+      "p_linearinterp": 1.5712197957596903,
+      "trajectory_file": "l1_n80.npz"
+    },
+    {
+      "method": "L1",
+      "n": 160,
+      "nodes": 161,
+      "algebraic_tol": 1e-12,
+      "E_node": 0.00012937113157540647,
+      "E_linearinterp": 0.00014932163451930602,
+      "solver_actual_state_residual": 8.956281549780943e-13,
+      "solver_residuals": {
+        "max_normalized_full_residual": 8.956281549780943e-13,
+        "max_normalized_full_residual_by_component": [
+          3.824278741788603e-13,
+          8.956281549780943e-13,
+          7.342605191906164e-13,
+          1.9789211199337452e-14,
+          2.8490439308648004e-14
+        ],
+        "max_absolute_full_residual": 4.4941828036826337e-13,
+        "requested_algebraic_tolerance": 1e-12,
+        "arithmetic_is_interval_certified": false
+      },
+      "solver_counters": {
+        "method": "GRAPH-FULL L1",
+        "n": 160,
+        "dimension": 5,
+        "history_weights": 12880,
+        "history_scalar_madds": 557990,
+        "history_fraction_subtractions": 0,
+        "history_state_updates": 0,
+        "history_integer_subtractions": 0,
+        "force_evaluations": 160,
+        "F_evaluations": 1150,
+        "jacobian_evaluations": 415,
+        "nonlinear_iterations": 415,
+        "linear_solves": 415,
+        "matrix_factorizations": 415,
+        "linear_flops_est": 38041.6666666667,
+        "line_search_evaluations": 415,
+        "residual_checks": 1150,
+        "output_nodes": 161,
+        "output_scalar_values": 805,
+        "history_start": 0.0,
+        "arithmetic": "float64; supplied uniform float grid",
+        "machine_epsilon": 2.220446049250313e-16,
+        "solve_seconds": 0.0480186999993748,
+        "seconds": 0.0480186999993748,
+        "output_storage_bytes": 7728,
+        "peak_array_storage_bytes_est": 16528,
+        "peak_storage_bytes_est": 16528
+      },
+      "pure_derivative_force_defect_max": 0.00047099942361827907,
+      "exact_substitution_raw_max": 0.00047099942361827907,
+      "G17_consistency_budget": 0.0002280787262211881,
+      "independent_actual_state_residual": 8.956281549780943e-13,
+      "normalization": "losses+mass*oldest_L1_weight",
+      "consistency_units": "state after G17 normalization; raw defect has force units",
+      "exact_arithmetic_global_comparison_applicable": true,
+      "consistency_evaluation_is_interval_certified": false,
+      "G17_error_estimate": 0.00022807872711681627,
+      "G17_rounding_check_slack": 1.6325242745312724e-12,
+      "G17_comparison_check": true,
+      "G17_estimate_is_interval_certified": false,
+      "p_node": 1.477569637570041,
+      "p_linearinterp": 1.555908718005252,
+      "trajectory_file": "l1_n160.npz"
+    },
+    {
+      "method": "L1",
+      "n": 320,
+      "nodes": 321,
+      "algebraic_tol": 1e-12,
+      "E_node": 4.623022221439399e-05,
+      "E_linearinterp": 5.126125458299047e-05,
+      "solver_actual_state_residual": 9.98023647807335e-13,
+      "solver_residuals": {
+        "max_normalized_full_residual": 9.98023647807335e-13,
+        "max_normalized_full_residual_by_component": [
+          3.590877795121916e-13,
+          8.289354976144548e-13,
+          9.98023647807335e-13,
+          3.013125038759551e-14,
+          9.066835245049453e-14
+        ],
+        "max_absolute_full_residual": 4.991562718714704e-13,
+        "requested_algebraic_tolerance": 1e-12,
+        "arithmetic_is_interval_certified": false
+      },
+      "solver_counters": {
+        "method": "GRAPH-FULL L1",
+        "n": 320,
+        "dimension": 5,
+        "history_weights": 51360,
+        "history_scalar_madds": 2118440,
+        "history_fraction_subtractions": 0,
+        "history_state_updates": 0,
+        "history_integer_subtractions": 0,
+        "force_evaluations": 320,
+        "F_evaluations": 2164,
+        "jacobian_evaluations": 762,
+        "nonlinear_iterations": 762,
+        "linear_solves": 762,
+        "matrix_factorizations": 762,
+        "linear_flops_est": 69849.99999999953,
+        "line_search_evaluations": 762,
+        "residual_checks": 2164,
+        "output_nodes": 321,
+        "output_scalar_values": 1605,
+        "history_start": 0.0,
+        "arithmetic": "float64; supplied uniform float grid",
+        "machine_epsilon": 2.220446049250313e-16,
+        "solve_seconds": 0.08689110000068467,
+        "seconds": 0.08689110000068467,
+        "output_storage_bytes": 15408,
+        "peak_array_storage_bytes_est": 31888,
+        "peak_storage_bytes_est": 31888
+      },
+      "pure_derivative_force_defect_max": 0.00016818690047748497,
+      "exact_substitution_raw_max": 0.00016818690047748497,
+      "G17_consistency_budget": 8.146099553477369e-05,
+      "independent_actual_state_residual": 9.98023647807335e-13,
+      "normalization": "losses+mass*oldest_L1_weight",
+      "consistency_units": "state after G17 normalization; raw defect has force units",
+      "exact_arithmetic_global_comparison_applicable": true,
+      "consistency_evaluation_is_interval_certified": false,
+      "G17_error_estimate": 8.146099653279733e-05,
+      "G17_rounding_check_slack": 1.6325242745312724e-12,
+      "G17_comparison_check": true,
+      "G17_estimate_is_interval_certified": false,
+      "p_node": 1.4846075218428567,
+      "p_linearinterp": 1.5424825128957003,
+      "trajectory_file": "l1_n320.npz"
+    }
+  ],
+  "finest_tolerance_controls": [
+    {
+      "method": "L1",
+      "n": 320,
+      "nodes": 321,
+      "algebraic_tol": 1e-13,
+      "E_node": 4.623022221450501e-05,
+      "E_linearinterp": 5.126125458310149e-05,
+      "solver_actual_state_residual": 9.736442177378029e-14,
+      "solver_residuals": {
+        "max_normalized_full_residual": 9.736442177378029e-14,
+        "max_normalized_full_residual_by_component": [
+          4.121366777188743e-14,
+          9.736442177378029e-14,
+          8.257216524294185e-14,
+          2.2574156699688983e-15,
+          3.3757446775633726e-15
+        ],
+        "max_absolute_full_residual": 4.884981308350689e-14,
+        "requested_algebraic_tolerance": 1e-13,
+        "arithmetic_is_interval_certified": false
+      },
+      "solver_counters": {
+        "method": "GRAPH-FULL L1",
+        "n": 320,
+        "dimension": 5,
+        "history_weights": 51360,
+        "history_scalar_madds": 2213660,
+        "history_fraction_subtractions": 0,
+        "history_state_updates": 0,
+        "history_integer_subtractions": 0,
+        "force_evaluations": 320,
+        "F_evaluations": 2280,
+        "jacobian_evaluations": 820,
+        "nonlinear_iterations": 820,
+        "linear_solves": 820,
+        "matrix_factorizations": 820,
+        "linear_flops_est": 75166.66666666648,
+        "line_search_evaluations": 820,
+        "residual_checks": 2280,
+        "output_nodes": 321,
+        "output_scalar_values": 1605,
+        "history_start": 0.0,
+        "arithmetic": "float64; supplied uniform float grid",
+        "machine_epsilon": 2.220446049250313e-16,
+        "solve_seconds": 0.08925989999988815,
+        "seconds": 0.08925989999988815,
+        "output_storage_bytes": 15408,
+        "peak_array_storage_bytes_est": 31888,
+        "peak_storage_bytes_est": 31888
+      },
+      "pure_derivative_force_defect_max": 0.00016818690047748497,
+      "exact_substitution_raw_max": 0.00016818690047748497,
+      "G17_consistency_budget": 8.146099553477369e-05,
+      "independent_actual_state_residual": 9.736442177378029e-14,
+      "normalization": "losses+mass*oldest_L1_weight",
+      "consistency_units": "state after G17 normalization; raw defect has force units",
+      "exact_arithmetic_global_comparison_applicable": true,
+      "consistency_evaluation_is_interval_certified": false,
+      "G17_error_estimate": 8.14609956321381e-05,
+      "G17_rounding_check_slack": 1.6325242745312724e-12,
+      "G17_comparison_check": true,
+      "G17_estimate_is_interval_certified": false,
+      "primary_tol": 1e-12,
+      "state_difference_from_primary": 1.1246559239452836e-13,
+      "difference_over_primary_error": 2.4327287866574797e-09,
+      "trajectory_file": "l1_n320_tol_control.npz"
+    }
+  ],
+  "continuous_extrema_checks": {
+    "L1": {
+      "analytic_candidates": 0.003917116661891873,
+      "independently_sampled": 0.003917116642718654,
+      "query_nodes": 40001,
+      "checked_only_at_coarsest_level": true
+    }
+  },
+  "all_runtime_checks_passed": true
+}

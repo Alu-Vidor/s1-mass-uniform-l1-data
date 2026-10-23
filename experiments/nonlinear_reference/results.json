@@ -1,0 +1,604 @@
+{
+  "parameters": {
+    "T": 1,
+    "B": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        -1.0,
+        1.0
+      ],
+      [
+        0.0,
+        -1.0
+      ]
+    ],
+    "C": [
+      1.0,
+      1.3,
+      0.9
+    ],
+    "edge_weights": [
+      5.0,
+      3.0
+    ],
+    "edge_cubic": 0.1,
+    "u0": [
+      1.0,
+      -0.5,
+      0.7
+    ],
+    "load": [
+      0.2,
+      -0.1,
+      0.3
+    ],
+    "initial_incompatibility": [
+      -9.9875,
+      13.855900000000002,
+      -4.4484
+    ],
+    "description": "F(v)=C v+B diag(edge_weights)[B^T v+0.1(B^T v)^3]",
+    "mass_ratios": [
+      "1",
+      "1/4",
+      "1/16"
+    ]
+  },
+  "rows": [
+    {
+      "case": "a3_delta_1_1_m16",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 16,
+      "N": 59,
+      "max_normalized_residual": 4.657979185576836e-13,
+      "max_newton_updates": 3,
+      "probe_count": 479,
+      "min_step": 2.913225216616411e-13,
+      "nodal_error": 0.007734565079958455,
+      "nodal_error_time": 9.387143506955908e-09,
+      "reference_refinement_discrepancy": 1.6342986908224333e-08,
+      "reference_K": 32768
+    },
+    {
+      "case": "a3_delta_1_1_m32",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 32,
+      "N": 123,
+      "max_normalized_residual": 4.256420867152254e-13,
+      "max_newton_updates": 3,
+      "probe_count": 735,
+      "min_step": 2.3869795029440866e-15,
+      "previous_PL_difference": 0.01830591282026084,
+      "nodal_error": 0.002732825715533016,
+      "nodal_error_time": 9.206239659498294e-10,
+      "reference_refinement_discrepancy": 1.6342986908224333e-08,
+      "reference_K": 32768,
+      "rate_actual_N": 1.4161403310045189
+    },
+    {
+      "case": "a3_delta_1_1_m64",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 64,
+      "N": 251,
+      "max_normalized_residual": 4.951128811970297e-13,
+      "max_newton_updates": 3,
+      "probe_count": 1247,
+      "min_step": 2.168404344971009e-17,
+      "previous_PL_difference": 0.006159390124876651,
+      "nodal_error": 0.0009857712069599733,
+      "nodal_error_time": 1.014287629580446e-10,
+      "reference_refinement_discrepancy": 1.6342986908224333e-08,
+      "reference_K": 32768,
+      "rate_actual_N": 1.4295696609537438
+    },
+    {
+      "case": "a3_delta_1_1_m128",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 128,
+      "N": 507,
+      "max_normalized_residual": 4.584619118647627e-13,
+      "max_newton_updates": 3,
+      "probe_count": 2271,
+      "min_step": 2.0328790734103208e-19,
+      "previous_PL_difference": 0.0017889026108341977,
+      "nodal_error": 0.00027302977537402295,
+      "nodal_error_time": 2.2505040096976658e-10,
+      "reference_refinement_discrepancy": 1.6342986908224333e-08,
+      "reference_K": 32768,
+      "rate_actual_N": 1.8260844934615508
+    },
+    {
+      "case": "a3_delta_1_1_m256",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 256,
+      "N": 1019,
+      "max_normalized_residual": 4.912361248657297e-13,
+      "max_newton_updates": 3,
+      "probe_count": 4319,
+      "min_step": 1.9587636905255695e-21,
+      "previous_PL_difference": 0.0004723289918372453,
+      "nodal_error": 8.747227059935359e-05,
+      "nodal_error_time": 2.6167070427189673e-11,
+      "reference_refinement_discrepancy": 1.6342986908224333e-08,
+      "reference_K": 32768,
+      "rate_actual_N": 1.6305893318439157,
+      "sampled_PL_error": 0.0001509056077189097,
+      "sampled_PL_error_time": 6.113173537444577e-10
+    },
+    {
+      "case": "a3_delta_1_100_m16",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 16,
+      "N": 76,
+      "max_normalized_residual": 3.754955222768075e-13,
+      "max_newton_updates": 3,
+      "probe_count": 668,
+      "min_step": 2.507217523872729e-19,
+      "nodal_error": 0.01114714403492112,
+      "nodal_error_time": 9.691141118761681e-16,
+      "reference_refinement_discrepancy": 1.7614813246913386e-07,
+      "reference_K": 32768
+    },
+    {
+      "case": "a3_delta_1_100_m32",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 32,
+      "N": 154,
+      "max_normalized_residual": 4.807572539124687e-13,
+      "max_newton_updates": 3,
+      "probe_count": 980,
+      "min_step": 2.0117032497289633e-21,
+      "previous_PL_difference": 0.0312675368615494,
+      "nodal_error": 0.003953853879752139,
+      "nodal_error_time": 1.1062554746546141e-14,
+      "reference_refinement_discrepancy": 1.7614813246913386e-07,
+      "reference_K": 32768,
+      "rate_actual_N": 1.4676639555086841
+    },
+    {
+      "case": "a3_delta_1_100_m64",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 64,
+      "N": 314,
+      "max_normalized_residual": 4.966236309431248e-13,
+      "max_newton_updates": 3,
+      "probe_count": 1620,
+      "min_step": 1.7784383169890095e-23,
+      "previous_PL_difference": 0.009330988048821015,
+      "nodal_error": 0.0014144243620144437,
+      "nodal_error_time": 6.298034073692858e-15,
+      "reference_refinement_discrepancy": 1.7614813246913386e-07,
+      "reference_K": 32768,
+      "rate_actual_N": 1.4428830198401035
+    },
+    {
+      "case": "a3_delta_1_100_m128",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 128,
+      "N": 634,
+      "max_normalized_residual": 4.838641054256902e-13,
+      "max_newton_updates": 3,
+      "probe_count": 2900,
+      "min_step": 1.6802106192483375e-25,
+      "previous_PL_difference": 0.0026932228820246706,
+      "nodal_error": 0.000412491477296717,
+      "nodal_error_time": 3.3101783402736685e-16,
+      "reference_refinement_discrepancy": 1.7614813246913386e-07,
+      "reference_K": 32768,
+      "rate_actual_N": 1.7537207776478543
+    },
+    {
+      "case": "a3_delta_1_100_m256",
+      "alpha": 0.3,
+      "alpha_numerator": 3,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 256,
+      "N": 1274,
+      "max_normalized_residual": 4.951450466248151e-13,
+      "max_newton_updates": 3,
+      "probe_count": 5460,
+      "min_step": 1.5903435849255598e-27,
+      "previous_PL_difference": 0.0007112184002135979,
+      "nodal_error": 0.0001446118895195303,
+      "nodal_error_time": 1.121972198186419e-17,
+      "reference_refinement_discrepancy": 1.7614813246913386e-07,
+      "reference_K": 32768,
+      "rate_actual_N": 1.501949068156581,
+      "sampled_PL_error": 0.0002482539935214634,
+      "sampled_PL_error_time": 9.850284502969411e-18
+    },
+    {
+      "case": "a7_delta_1_1_m16",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 16,
+      "N": 59,
+      "max_normalized_residual": 4.817330207581285e-13,
+      "max_newton_updates": 3,
+      "probe_count": 444,
+      "min_step": 4.172325134277344e-06,
+      "nodal_error": 0.015514964004756621,
+      "nodal_error_time": 0.003043651580810547,
+      "reference_refinement_discrepancy": 9.03610075653205e-09,
+      "reference_K": 32768
+    },
+    {
+      "case": "a7_delta_1_1_m32",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 32,
+      "N": 123,
+      "max_normalized_residual": 4.782998725786514e-13,
+      "max_newton_updates": 3,
+      "probe_count": 700,
+      "min_step": 5.364418029785156e-07,
+      "previous_PL_difference": 0.015784202651240718,
+      "nodal_error": 0.005915760938642101,
+      "nodal_error_time": 0.0011938661336898804,
+      "reference_refinement_discrepancy": 9.03610075653205e-09,
+      "reference_K": 32768,
+      "rate_actual_N": 1.3124466026839228
+    },
+    {
+      "case": "a7_delta_1_1_m64",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 64,
+      "N": 251,
+      "max_normalized_residual": 4.673852182597457e-13,
+      "max_newton_updates": 3,
+      "probe_count": 1212,
+      "min_step": 7.264316082000732e-08,
+      "previous_PL_difference": 0.005788305824742851,
+      "nodal_error": 0.002457588366215957,
+      "nodal_error_time": 0.00036279112100601196,
+      "reference_refinement_discrepancy": 9.03610075653205e-09,
+      "reference_K": 32768,
+      "rate_actual_N": 1.2315691796648112
+    },
+    {
+      "case": "a7_delta_1_1_m128",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 128,
+      "N": 507,
+      "max_normalized_residual": 4.981729662732495e-13,
+      "max_newton_updates": 3,
+      "probe_count": 2236,
+      "min_step": 9.778887033462524e-09,
+      "previous_PL_difference": 0.0019383521008045357,
+      "nodal_error": 0.001015662497704583,
+      "nodal_error_time": 0.00300238816998899,
+      "reference_refinement_discrepancy": 9.03610075653205e-09,
+      "reference_K": 32768,
+      "rate_actual_N": 1.2568512732577668
+    },
+    {
+      "case": "a7_delta_1_1_m256",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1",
+      "masses": [
+        1.0,
+        0.25,
+        0.0625
+      ],
+      "m": 256,
+      "N": 1019,
+      "max_normalized_residual": 4.886220383426026e-13,
+      "max_newton_updates": 2,
+      "probe_count": 4284,
+      "min_step": 1.3387762010097504e-09,
+      "previous_PL_difference": 0.0007073698721553091,
+      "nodal_error": 0.00040928798588282106,
+      "nodal_error_time": 0.0021746129204984754,
+      "reference_refinement_discrepancy": 9.03610075653205e-09,
+      "reference_K": 32768,
+      "rate_actual_N": 1.3019933886554724,
+      "sampled_PL_error": 0.0004272085892177979,
+      "sampled_PL_error_time": 0.0021351426403271034
+    },
+    {
+      "case": "a7_delta_1_100_m16",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 16,
+      "N": 76,
+      "max_normalized_residual": 2.1796383747001082e-13,
+      "max_newton_updates": 3,
+      "probe_count": 598,
+      "min_step": 1.0710209608078003e-08,
+      "nodal_error": 0.022067701193497574,
+      "nodal_error_time": 2.45007686316967e-06,
+      "reference_refinement_discrepancy": 9.081815233180635e-08,
+      "reference_K": 32768
+    },
+    {
+      "case": "a7_delta_1_100_m32",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 32,
+      "N": 154,
+      "max_normalized_residual": 3.2943007810766923e-13,
+      "max_newton_updates": 3,
+      "probe_count": 910,
+      "min_step": 1.3387762010097504e-09,
+      "previous_PL_difference": 0.021925552879356214,
+      "nodal_error": 0.010263031651970577,
+      "nodal_error_time": 3.7491554394364357e-06,
+      "reference_refinement_discrepancy": 9.081815233180635e-08,
+      "reference_K": 32768,
+      "rate_actual_N": 1.0840355359410505
+    },
+    {
+      "case": "a7_delta_1_100_m64",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 64,
+      "N": 314,
+      "max_normalized_residual": 4.849211049307063e-13,
+      "max_newton_updates": 3,
+      "probe_count": 1550,
+      "min_step": 1.4551915228366852e-10,
+      "previous_PL_difference": 0.0092343645120724,
+      "nodal_error": 0.003732326838980324,
+      "nodal_error_time": 3.0765913834329695e-06,
+      "reference_refinement_discrepancy": 9.081815233180635e-08,
+      "reference_K": 32768,
+      "rate_actual_N": 1.4197909686130867
+    },
+    {
+      "case": "a7_delta_1_100_m128",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 128,
+      "N": 634,
+      "max_normalized_residual": 4.929203097814415e-13,
+      "max_newton_updates": 3,
+      "probe_count": 2830,
+      "min_step": 1.5916157281026244e-11,
+      "previous_PL_difference": 0.0030000717132704358,
+      "nodal_error": 0.0014248697080526257,
+      "nodal_error_time": 2.0271827452233993e-06,
+      "reference_refinement_discrepancy": 9.081815233180635e-08,
+      "reference_K": 32768,
+      "rate_actual_N": 1.3704451724855298
+    },
+    {
+      "case": "a7_delta_1_100_m256",
+      "alpha": 0.7,
+      "alpha_numerator": 7,
+      "delta": "1/100",
+      "masses": [
+        0.01,
+        0.0025,
+        0.000625
+      ],
+      "m": 256,
+      "N": 1274,
+      "max_normalized_residual": 4.963355103797259e-13,
+      "max_newton_updates": 3,
+      "probe_count": 5390,
+      "min_step": 1.8758328224066645e-12,
+      "previous_PL_difference": 0.0010149191901765164,
+      "nodal_error": 0.0005785283027635174,
+      "nodal_error_time": 4.77088246952917e-06,
+      "reference_refinement_discrepancy": 9.081815233180635e-08,
+      "reference_K": 32768,
+      "rate_actual_N": 1.291574249776611,
+      "sampled_PL_error": 0.000611446641795306,
+      "sampled_PL_error_time": 4.659756712044327e-06
+    }
+  ],
+  "reference_checks": [
+    {
+      "alpha": 0.3,
+      "delta": "1",
+      "reference_levels": [
+        8192,
+        16384,
+        32768
+      ],
+      "grade": 13.333333333333334,
+      "probe_count": 4724,
+      "successive_probe_discrepancies": [
+        6.833274512896281e-08,
+        1.6342986908224333e-08
+      ],
+      "reference_increment_observed_order": 2.0639054051425654,
+      "finest_L1_nodal_error": 8.747227059935359e-05,
+      "finest_L1_sampled_error": 0.0001509056077189097,
+      "reference_discrepancy_over_finest_L1_error": 0.00018683620301889256,
+      "caution": "Refinement discrepancy is numerical evidence, not a certified reference error bound."
+    },
+    {
+      "alpha": 0.3,
+      "delta": "1/100",
+      "reference_levels": [
+        8192,
+        16384,
+        32768
+      ],
+      "grade": 13.333333333333334,
+      "probe_count": 5800,
+      "successive_probe_discrepancies": [
+        7.50251941683544e-07,
+        1.7614813246913386e-07
+      ],
+      "reference_increment_observed_order": 2.090585968191153,
+      "finest_L1_nodal_error": 0.0001446118895195303,
+      "finest_L1_sampled_error": 0.0002482539935214634,
+      "reference_discrepancy_over_finest_L1_error": 0.0012180750355616126,
+      "caution": "Refinement discrepancy is numerical evidence, not a certified reference error bound."
+    },
+    {
+      "alpha": 0.7,
+      "delta": "1",
+      "reference_levels": [
+        8192,
+        16384,
+        32768
+      ],
+      "grade": 5.714285714285714,
+      "probe_count": 4893,
+      "successive_probe_discrepancies": [
+        3.624603750473909e-08,
+        9.03610075653205e-09
+      ],
+      "reference_increment_observed_order": 2.0040510225809305,
+      "finest_L1_nodal_error": 0.00040928798588282106,
+      "finest_L1_sampled_error": 0.0004272085892177979,
+      "reference_discrepancy_over_finest_L1_error": 2.207761055346267e-05,
+      "caution": "Refinement discrepancy is numerical evidence, not a certified reference error bound."
+    },
+    {
+      "alpha": 0.7,
+      "delta": "1/100",
+      "reference_levels": [
+        8192,
+        16384,
+        32768
+      ],
+      "grade": 5.714285714285714,
+      "probe_count": 6212,
+      "successive_probe_discrepancies": [
+        3.6560274657704284e-07,
+        9.081815233180635e-08
+      ],
+      "reference_increment_observed_order": 2.0092243176559688,
+      "finest_L1_nodal_error": 0.0005785283027635174,
+      "finest_L1_sampled_error": 0.000611446641795306,
+      "reference_discrepancy_over_finest_L1_error": 0.00015698134714928492,
+      "caution": "Refinement discrepancy is numerical evidence, not a certified reference error bound."
+    }
+  ],
+  "reference_method": "Implicit piecewise-linear product integration of the equivalent Volterra equation; continuous forcing-integral reconstruction.",
+  "reference_code_sha256": "77e3984ca219cb14bc2ebec6b320eeb9ccbbfc91e03ebd86d481a52d811bafb6",
+  "l1_code_sha256": "ea1c883dcd4838eed3a359a689d11a5f220ab5df8a38a489007eda222edf4831",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "elapsed_seconds": 232.6141698360443
+}

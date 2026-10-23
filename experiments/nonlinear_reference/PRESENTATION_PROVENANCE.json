@@ -1,0 +1,87 @@
+{
+  "input_results_sha256": "58f82bd99238fd2e6ad235fdcb0a865c99bf5ffe37b64f2521746206fc2aeab6",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "matplotlib": "3.11.2",
+  "outputs": {
+    "Fig5.png": "aacaadf7df4e594507519a7acca7ad79a71877a2af5e4cc0971c49c744187cd6",
+    "Fig5.eps": "5c684ab7e381833432d9cd6b66e4c280ef2d8c592395055f50fb6ca15fd90791",
+    "final_table.tex": "fac16020b602aebf4768e74c2599fa59d12b3238304f842759575da4b6bfc29c",
+    "subsection.texfrag": "2a2ebcbdffb973c761f487270c1abb6d1ced7f791070c0c9a2d90dc62601c3c7"
+  },
+  "final_copyedit": {
+    "operation": "sepia_refactor",
+    "scope": "Exact prose replacements in subsection and presentation template; presentation generator not executed.",
+    "edit_record": "sources/SEPIA_FINAL_EDITS.json",
+    "previous_provenance_sha256": "c242be39a4864fb16382057d6b60caf7a8bcbb04466b9ee4f11eddf4b6b54c0f",
+    "updated_prose_outputs": {
+      "subsection.texfrag": "2be1303fc59d9da9c348b9ae50121bdfefd9f9065ca0cc6710e977f35e266183"
+    },
+    "current_template_script_sha256": "bf56509ecc814f7801f41038630b55f2fd92167e8a04cc63839cb06767b988e1",
+    "current_fragment_sha256": "f2e911f189b84cd1c811d05223265d3c18919bdf802eb74a3f00411ab5dd997e",
+    "no_time_integration": true,
+    "no_figure_replot": true,
+    "historical_generation_fields_retained": true,
+    "figure_note": "Historical figure output hashes are retained. Running preparation/plot_figures.py records current output hashes in provenance/figure_generation/figure_compliance.json.",
+    "template_note": "Recorded prose replacements synchronized; journal-specific caption edits remain in the article fragment."
+  },
+  "punctuation_revision": {
+    "operation": "requested prose punctuation refactor",
+    "scope": "Exact recorded punctuation and sentence-syntax changes in prose outputs and generator template; generator not executed.",
+    "edit_record": "sources/SEPIA_PUNCTUATION_EDITS.json",
+    "checks": "sources/SEPIA_PUNCTUATION_CHECKS.json",
+    "previous_provenance_sha256": "763e5bee06b9985b3454b46bb15cb671d8da4cf79a5015a618d64336a8e4dfdc",
+    "changed_files_raw_sha256": {
+      "manuscript/preparation/nonlinear_reference.texfrag": {
+        "before_raw_sha256": "f2e911f189b84cd1c811d05223265d3c18919bdf802eb74a3f00411ab5dd997e",
+        "after_raw_sha256": "47bdeba122fcb3eaf0dd5205cb640ea8918ad70803b06ea4ce8696ef04eb6560"
+      },
+      "experiments/nonlinear_reference/subsection.texfrag": {
+        "before_raw_sha256": "2be1303fc59d9da9c348b9ae50121bdfefd9f9065ca0cc6710e977f35e266183",
+        "after_raw_sha256": "863db22eb7fb0c91ca1f98c6bed896c6ca23eb6bf76eb7f401b8e8d3bbc7206b"
+      },
+      "experiments/nonlinear_reference/present_study.py": {
+        "before_raw_sha256": "bf56509ecc814f7801f41038630b55f2fd92167e8a04cc63839cb06767b988e1",
+        "after_raw_sha256": "bbebcbff219266500525e0edda1b030351f62a8daf2ad35d3152ffae76d68b77"
+      }
+    },
+    "updated_prose_output_keys": [
+      "subsection.texfrag"
+    ],
+    "solver_runs": 0,
+    "figure_replots": 0,
+    "no_time_integration": true,
+    "no_figure_replot": true,
+    "historical_generation_fields_retained": true,
+    "figure_note": "Historical figure output hashes are retained. Running preparation/plot_figures.py records current output hashes in provenance/figure_generation/figure_compliance.json."
+  },
+  "redundancy_revision": {
+    "operation": "objective redundancy refactor",
+    "scope": "Exact recorded prose changes in the nonlinear manuscript fragment, saved subsection and presentation template; generator not executed.",
+    "edit_record": "sources/REDUNDANCY_EDITS.json",
+    "checks": "sources/REDUNDANCY_CHECKS.json",
+    "previous_provenance_sha256": "729e8f9716c0f9895a6e60c1128b68019ef36a24eaafbcf1937533bade630b60",
+    "changed_files_raw_sha256": {
+      "manuscript/preparation/nonlinear_reference.texfrag": {
+        "before_raw_sha256": "47bdeba122fcb3eaf0dd5205cb640ea8918ad70803b06ea4ce8696ef04eb6560",
+        "after_raw_sha256": "7edb8fb2995eb7db83eb86d9812bfbb88f9b149e9adbba4041ce2c8219bbe6b4"
+      },
+      "experiments/nonlinear_reference/present_study.py": {
+        "before_raw_sha256": "bbebcbff219266500525e0edda1b030351f62a8daf2ad35d3152ffae76d68b77",
+        "after_raw_sha256": "11c953a5e0f5e0e26044d088d58b407b2721313807434ae30f57312b1806cb35"
+      },
+      "experiments/nonlinear_reference/subsection.texfrag": {
+        "before_raw_sha256": "863db22eb7fb0c91ca1f98c6bed896c6ca23eb6bf76eb7f401b8e8d3bbc7206b",
+        "after_raw_sha256": "2a2ebcbdffb973c761f487270c1abb6d1ced7f791070c0c9a2d90dc62601c3c7"
+      }
+    },
+    "updated_prose_output_keys": [
+      "subsection.texfrag"
+    ],
+    "solver_runs": 0,
+    "figure_replots": 0,
+    "no_time_integration": true,
+    "no_figure_replot": true,
+    "historical_generation_fields_retained": true,
+    "figure_note": "Historical figure output hashes are retained. Running preparation/plot_figures.py records current output hashes in provenance/figure_generation/figure_compliance.json."
+  }
+}
